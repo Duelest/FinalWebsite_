@@ -1,1 +1,3 @@
 # FinalWebsite_
+# This file is about 170MB to download
+# NOTICE: ANY IMAGE YOU SEE HERE IS NOT MINE AND IS ONLY BEING USED FOR SCHOOL PURPOSES
