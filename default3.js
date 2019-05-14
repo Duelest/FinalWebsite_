@@ -1,4 +1,4 @@
-//Starts box1, then intro scene, and then the picking scene.
+//Starts box1, then intro scene, and then the Picking scene.
 function startGame(start) {
 var x = document.getElementById("box1");
 var x1 = document.getElementById("intro");
@@ -220,17 +220,20 @@ var iRow6;
 
 function typewriter()
 {
+  //SETS THE CONTENT TO BLANK
  sContents =  ' ';
  iRow = Math.max(0, iIndex-iScrollAt);
  var destination = document.getElementById("choiceA_1");
- 
+ //BEGINS TO ITERATE EACH LETTER
  while ( iRow < iIndex ) {
   sContents += firstScene[iRow++] + '<br />';
  }
+ //WHILE ITERATION GOING ON, PRINT EACH LETTER FROM THE BEGINNING TO THE END
  destination.innerHTML = sContents + firstScene[iIndex].substring(0, iTextPos) + "<br />" + "|"  ;
  if ( iTextPos++ == iArrLength ) {
   iTextPos = 0;
   iIndex++;
+  //BRINGS IT BACK TO THE WHILE LOOP
   if ( iIndex != firstScene.length ) {
    iArrLength = firstScene[iIndex].length;
    setTimeout("typewriter()", 0);

@@ -19,12 +19,6 @@ document.onkeydown = function(e){
 			case 39:
 				document.getElementById("id-1").remove();
 				postscribe(document.head, "<script src='default3.js'></script>");
-				// var scriptSrc = document.createElement('script');
-				// scriptSrc.setAttribute('src','lib/prototype.js');
-				// document.head.appendChild(scriptSrc);
-				// var scriptSrc2 = document.createElement('script');
-				// scriptSrc2.setAttribute('src','lib/scriptaculous.js');
-				// document.head.appendChild(scriptSrc2);
 				break;
 			case 40:
 				Effect.multiple(["icon1", "icon2", "icon3", "icon4", "icon5", "icon6", "icon7", "icon8", "icon9", "icon10", 
@@ -47,47 +41,4 @@ document.onkeydown = function(e){
 
 
 
-
-// window.addEventListener("keyup", keyCode, false);
-// window.addEventListener("keydown", keyDown, false);
-// var keys = [];
-// function keyCode(e) {
-// 	keys[e.keyCode] = true;
-// 	if (keys[16] && keys[38]) {
-// 		$("#elementWeb1").remove();
-// 	}
-// }
-
-
-// function keyDown(e) {
-// 	var keyDown = event.keyCode;
-// 	if (keyDown == 39) {
-// 		alert("you pressed right!");
-// 	}
-// }
-
-
-
-
-
-
-
-// function keyCode2(event) {
-// 	var x = event.keyCode2;
-// 	var s = document.createElement('script');	
-// 	if (x == 39) {
-// 	s.type = "text/javascript"
-// 	s.src = prototype.js;
-// 	document.body.appendChild(s);
-// 	}
-// }
-
-
-
-// function addScript(src) {
-
-// 	var s = document.createElement('script');
-// 	s.src = "<script src="lib/prototype.js" type="text/javascript"></script>";
-// 	target.appendChild(s);
-// }
 
