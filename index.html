@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script src="default.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>  
+    <div id="elementWeb1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+  <body >
+  <header>
+  <h1> <span id="main-title">LeagueOfLegends</span>Information </h1>
+  <div style="text-align: center;">
+  <form action="/search/" method="get"> Search Site
+  <input id="search" name="search_query" title="Type keyword or press enter for site search." type="text" placeholder="keyword...." required autofocus="">
+  </form>
+  </div>
+  <ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">S-Tier Champions</a>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="sTier.html">Tier list</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="/childs/5stars/sort_by/type">Type list</a>
+  <a class="dropdown-item" href="/childs/5stars/sort_by/element">Element list</a>
+  <a class="dropdown-item" href="/childs/5stars/sort_by/date">Date added</a>
+  </div>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">A-Tier Champions</a>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="/childs/4stars/sort_by/tier">Tier list</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="/childs/4stars/sort_by/type">Type list</a>
+  <a class="dropdown-item" href="/childs/4stars/sort_by/element">Element list</a>
+  <a class="dropdown-item" href="/childs/4stars/sort_by/date">Date added</a>
+  </div>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">B-Tier Champions</a>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="/childs/3stars/sort_by/tier">Tier list</a>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="/childs/3stars/sort_by/type">Type list</a>
+  <a class="dropdown-item" href="/childs/3stars/sort_by/element">Element list</a>
+  <a class="dropdown-item" href="/childs/3stars/sort_by/date">Date added</a>
+  </div>
+  </li>
+  <!-- <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Soul Cards</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="/equips/5stars">5 Star Cards</a>
+      <a class="dropdown-item" href="/equips/4stars">4 Star Cards</a>
+      <a class="dropdown-item" href="/equips/3stars">3 Star Cards</a>
+    </div>
+    </li> -->
+  <li class="nav-item dropdown">
+  <a class="nav-link offsite-link"  href="#" role="button" aria-haspopup="true" aria-expanded="false">Champion Concepts</a>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link offsite-link" href="#" role="button" aria-haspopup="true" aria-expanded="false">Upcoming Champion</a>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link offsite-link"  href="https://na.leagueoflegends.com/en/" role="button" aria-haspopup="true" aria-expanded="false">LoLPage</a>
+  </li>
+  </ul>
+  </header>
+  <main>
+  <div class="container notice-board">
+  <h2 id="notice"> Notice </h2>
+  <p id="noticeP"> If you have any ideas or changes that need to be made, contact us ><a href="#">HERE</a>< and we will take a look at it.
+  </div>
+  <div class="container">
+  <h4>Recent Champion updates</h4>
+  <div class="row justify-content-center">
+  <div class="col-* unit-grid-cols">
+  <a href="#">
+  <img class="profile_imgs" id="sylasUp" src="images/Sylas.jpg" alt="Sylas">
+  </a>
+  <h6 class="unit-profile-title">Sylas</h6>
+  </div>
+  <div class="col-* unit-grid-cols">
+  <a href="#">
+  <img class="profile_imgs" src="images/Neeko.jpg" alt="Neeko"/>
+  </a>
+  <h6 class="unit-profile-title">Neeko</h6>
+  </div>
+  <div class="col-* unit-grid-cols">
+  <a href="#">
+  <img class="profile_imgs" src="images/Ornn.jpg" alt="Ornn"/>
+  </a>
+  <h6 class="unit-profile-title">Ornn</h6>
+  </div>
+  <div class="col-* unit-grid-cols">
+  <a href="#">
+  <img class="profile_imgs" src="images/Zoe.jpg" alt="Zoe"/>
+  </a>
+  <h6 class="unit-profile-title">Zoe</h6>
+  </div>
+  <div class="col-* unit-grid-cols">
+  <a href="#">
+  <img class="profile_imgs" src="images/Kai'sa.jpg" alt="Kai'sa"/>
+  </a>
+  <h6 class="unit-profile-title">Kai'sa</h6>
+  </div>
+  </div>
+  </div>
+  </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>
+  </div>
+  <!-- </html> ends first DOM -->
+  <!-- NEW DOM Begins here, <head> begins here -->
+  <div id="elementWeb2">
+  </head>
+  <body id="web2Body">
+    <header>
+      <p id="id-1"> Congradulations! You found the hidden code. Please press "Shift + Right Arrow" key to continue. </p>
+    </header>
+    <main>
+      <div id="iconSquare">
+        <img title="Aatrox" class="myImg"  id="icon1"  src="images/1Icon/AatroxSquare.png  "alt="AatroxSquare.png" onclick="click1()">
+        <img title="Ahri" class="myImg"  id="icon2"  src="images/1Icon/AhriSquare.png  "alt="AhriSquare.png" onclick="click2()">
+        <img title="Akali" class="myImg"  id="icon3"  src="images/1Icon/AkaliSquare.png "alt="AkaliSquare.png "onclick="click3()">
+        <img title="Alistar" class="myImg"  id="icon4"  src="images/1Icon/AlistarSquare.png "alt="AlistarSquare.png "onclick="click4()">
+        <img title="Amumu" class="myImg"  id="icon5"  src="images/1Icon/AmumuSquare.png "alt="AmumuSquare.png "onclick="click5()">
+        <img title="Anivia" class="myImg"  id="icon6"  src="images/1Icon/AniviaSquare.png  "alt="AniviaSquare.png  "onclick="click6()">
+        <img title="Annie" class="myImg"  id="icon7"  src="images/1Icon/AnnieSquare.png "alt="AnnieSquare.png "onclick="click7()">
+        <img title="Ashe" class="myImg"  id="icon8"  src="images/1Icon/AsheSquare.png  "alt="AsheSquare.png  "onclick="click8()">
+        <img title="Aurelion Sol" class="myImg"  id="icon9"  src="images/1Icon/Aurelion_SolSquare.png  "alt="Aurelion_SolSquare.png  "onclick="click9()">
+        <img title="Azir" class="myImg"  id="icon10" src="images/1Icon/AzirSquare.png  "alt="AzirSquare.png  "onclick="click10()">
+        <img title="Bard" class="myImg"  id="icon11" src="images/1Icon/BardSquare.png  "alt="BardSquare.png  "onclick="click11()">
+        <img title="Blitzcrank" class="myImg"  id="icon12" src="images/1Icon/BlitzcrankSquare.png  "alt="BlitzcrankSquare.png  "onclick="click12()">
+        <img title="Brand" class="myImg"  id="icon13" src="images/1Icon/BrandSquare.png "alt="BrandSquare.png "onclick="click13()">
+        <img title="Braum" class="myImg"  id="icon14" src="images/1Icon/BraumSquare.png "alt="BraumSquare.png "onclick="click14()">
+        <img title="Caitlyn" class="myImg"  id="icon15" src="images/1Icon/CaitlynSquare.png "alt="CaitlynSquare.png "onclick="click15()">
+        <img title="Camille" class="myImg"  id="icon16" src="images/1Icon/CamilleSquare.png "alt="CamilleSquare.png "onclick="click16()">
+        <img title="Cassiopeia" class="myImg"  id="icon17" src="images/1Icon/CassiopeiaSquare.png  "alt="CassiopeiaSquare.png  "onclick="click17()">
+        <img title="Cho'Gath" class="myImg"  id="icon18" src="images/1Icon/Cho'GathSquare.png  "alt="Cho'GathSquare.png  "onclick="click18()">
+        <img title="Corki" class="myImg"  id="icon19" src="images/1Icon/CorkiSquare.png "alt="CorkiSquare.png "onclick="click19()">
+        <img title="Darius" class="myImg"  id="icon20" src="images/1Icon/DariusSquare.png  "alt="DariusSquare.png  "onclick="click20()">
+        <img title="Diana" class="myImg"  id="icon21" src="images/1Icon/DianaSquare.png "alt="DianaSquare.png "onclick="click21()">
+        <img title="Dr.Mundo" class="myImg"  id="icon22" src="images/1Icon/Dr._MundoSquare.png "alt="Dr._MundoSquare.png "onclick="click22()">
+        <img title="Draven" class="myImg"  id="icon23" src="images/1Icon/DravenSquare.png  "alt="DravenSquare.png  "onclick="click23()">
+        <img title="Ekko" class="myImg"  id="icon24" src="images/1Icon/EkkoSquare.png  "alt="EkkoSquare.png  "onclick="click24()">
+        <img title="Elise" class="myImg"  id="icon25" src="images/1Icon/EliseSquare.png "alt="EliseSquare.png "onclick="click25()">
+        <img title="Evelynn" class="myImg"  id="icon26" src="images/1Icon/EvelynnSquare.png "alt="EvelynnSquare.png "onclick="click26()">
+        <img title="Ezreal" class="myImg"  id="icon27" src="images/1Icon/EzrealSquare.png  "alt="EzrealSquare.png  "onclick="click27()">
+        <img title="Fiddlesticks" class="myImg"  id="icon28" src="images/1Icon/FiddlesticksSquare.png  "alt="FiddlesticksSquare.png  "onclick="click28()">
+        <img title="Fiora" class="myImg"  id="icon29" src="images/1Icon/FioraSquare.png "alt="FioraSquare.png "onclick="click29()">
+        <img title="Fizz" class="myImg"  id="icon30" src="images/1Icon/FizzSquare.png  "alt="FizzSquare.png  "onclick="click30()">
+        <img title="Galio" class="myImg"  id="icon31" src="images/1Icon/GalioSquare.png "alt="GalioSquare.png "onclick="click31()">
+        <img title="Gangplank" class="myImg"  id="icon32" src="images/1Icon/GangplankSquare.png "alt="GangplankSquare.png "onclick="click32()">
+        <img title="Garen" class="myImg"  id="icon33" src="images/1Icon/GarenSquare.png "alt="GarenSquare.png "onclick="click33()">
+        <img title="Gnar" class="myImg"  id="icon34" src="images/1Icon/GnarSquare.png  "alt="GnarSquare.png  "onclick="click34()">
+        <img title="Gragas" class="myImg"  id="icon35" src="images/1Icon/GragasSquare.png  "alt="GragasSquare.png  "onclick="click35()">
+        <img title="Graves" class="myImg"  id="icon36" src="images/1Icon/GravesSquare.png  "alt="GravesSquare.png  "onclick="click36()">
+        <img title="Hecarim" class="myImg"  id="icon37" src="images/1Icon/HecarimSquare.png "alt="HecarimSquare.png "onclick="click37()">
+        <img title="Heimerdinger" class="myImg"  id="icon38" src="images/1Icon/HeimerdingerSquare.png  "alt="HeimerdingerSquare.png  "onclick="click38()">
+        <img title="Illaoi" class="myImg"  id="icon39" src="images/1Icon/IllaoiSquare.png  "alt="IllaoiSquare.png  "onclick="click39()">
+        <img title="Irelia" class="myImg"  id="icon40" src="images/1Icon/IreliaSquare.png  "alt="IreliaSquare.png  "onclick="click40()">
+        <img title="Ivern" class="myImg"  id="icon41" src="images/1Icon/IvernSquare.png "alt="IvernSquare.png "onclick="click41()">
+        <img title="Janna" class="myImg"  id="icon42" src="images/1Icon/JannaSquare.png "alt="JannaSquare.png "onclick="click42()">
+        <img title="JarvenIV" class="myImg"  id="icon43" src="images/1Icon/Jarvan_IVSquare.png "alt="Jarvan_IVSquare.png "onclick="click43()">
+        <img title="Jax" class="myImg"  id="icon44" src="images/1Icon/JaxSquare.png "alt="JaxSquare.png "onclick="click44()">
+        <img title="Jayce" class="myImg"  id="icon45" src="images/1Icon/JayceSquare.png "alt="JayceSquare.png "onclick="click45()">
+        <img title="Jhin" class="myImg"  id="icon46" src="images/1Icon/JhinSquare.png  "alt="JhinSquare.png  "onclick="click46()">
+        <img title="Jinx" class="myImg"  id="icon47" src="images/1Icon/JinxSquare.png  "alt="JinxSquare.png  "onclick="click47()">
+        <img title="Kai'Sa" class="myImg"  id="icon48" src="images/1Icon/Kai'SaSquare.png  "alt="Kai'SaSquare.png  "onclick="click48()">
+        <img title="Kalista" class="myImg"  id="icon49" src="images/1Icon/KalistaSquare.png "alt="KalistaSquare.png "onclick="click49()">
+        <img title="Karma" class="myImg"  id="icon50" src="images/1Icon/KarmaSquare.png "alt="KarmaSquare.png "onclick="click50()">
+        <img title="Karthus" class="myImg"  id="icon51" src="images/1Icon/KarthusSquare.png"  alt="KarthusSquare.png" onclick="click51()">
+        <img title="Kassadin" class="myImg"  id="icon52" src="images/1Icon/KassadinSquare.png" alt="KassadinSquare.png"  onclick="click52()">
+        <img title="Katarina" class="myImg"  id="icon53" src="images/1Icon/KatarinaSquare.png" alt="KatarinaSquare.png"  onclick="click53()">
+        <img title="Kayle" class="myImg"  id="icon54" src="images/1Icon/KayleSquare.png"  alt="KayleSquare.png" onclick="click54()">
+        <img title="Kayn" class="myImg"  id="icon55" src="images/1Icon/KaynSquare.png" alt="KaynSquare.png"  onclick="click55()">
+        <img title="Kennen" class="myImg"  id="icon56" src="images/1Icon/KennenSquare.png" alt="KennenSquare.png"  onclick="click56()">
+        <img title="Kha'Zix" class="myImg"  id="icon57" src="images/1Icon/Kha'ZixSquare.png"  alt="Kha'ZixSquare.png" onclick="click57()">
+        <img title="Kindred" class="myImg"  id="icon58" src="images/1Icon/KindredSquare.png"  alt="KindredSquare.png" onclick="click58()">
+        <img title="Kled" class="myImg"  id="icon59" src="images/1Icon/KledSquare.png" alt="KledSquare.png"  onclick="click59()">
+        <img title="Kog'Maw" class="myImg"  id="icon60" src="images/1Icon/Kog'MawSquare.png"  alt="Kog'MawSquare.png" onclick="click60()">
+        <img title="Leblanc" class="myImg"  id="icon61" src="images/1Icon/LeBlancSquare.png"  alt="LeBlancSquare.png" onclick="click61()">
+        <img title="LeeSin" class="myImg"  id="icon62" src="images/1Icon/Lee_SinSquare.png"  alt="Lee_SinSquare.png" onclick="click62()">
+        <img title="Leona" class="myImg"  id="icon63" src="images/1Icon/LeonaSquare.png"  alt="LeonaSquare.png" onclick="click63()">
+        <img title="Lissandra" class="myImg"  id="icon64" src="images/1Icon/LissandraSquare.png"  alt="LissandraSquare.png" onclick="click64()">
+        <img title="Lucian" class="myImg"  id="icon65" src="images/1Icon/LucianSquare.png" alt="LucianSquare.png"  onclick="click65()">
+        <img title="Lulu" class="myImg"  id="icon66" src="images/1Icon/LuluSquare.png" alt="LuluSquare.png"  onclick="click66()">
+        <img title="Lux" class="myImg"  id="icon67" src="images/1Icon/LuxSquare.png"  alt="LuxSquare.png" onclick="click67()">
+        <img title="Malphite" class="myImg"  id="icon68" src="images/1Icon/MalphiteSquare.png" alt="MalphiteSquare.png"  onclick="click68()">
+        <img title="Malzahar" class="myImg"  id="icon69" src="images/1Icon/MalzaharSquare.png" alt="MalzaharSquare.png"  onclick="click69()">
+        <img title="MaoKai" class="myImg"  id="icon70" src="images/1Icon/MaokaiSquare.png" alt="MaokaiSquare.png"  onclick="click70()">
+        <img title="MasterYi" class="myImg"  id="icon71" src="images/1Icon/Master_YiSquare.png"  alt="Master_YiSquare.png" onclick="click71()">
+        <img title="MissFortune" class="myImg"  id="icon72" src="images/1Icon/Miss_FortuneSquare.png" alt="Miss_FortuneSquare.png"  onclick="click72()">
+        <img title="Mordekaiser" class="myImg"  id="icon73" src="images/1Icon/MordekaiserSquare.png"  alt="MordekaiserSquare.png" onclick="click73()">
+        <img title="Morgana" class="myImg"  id="icon74" src="images/1Icon/MorganaSquare.png"  alt="MorganaSquare.png" onclick="click74()">
+        <img title="Nami" class="myImg"  id="icon75" src="images/1Icon/NamiSquare.png" alt="NamiSquare.png"  onclick="click75()">
+        <img title="Nasus" class="myImg"  id="icon76" src="images/1Icon/NasusSquare.png"  alt="NasusSquare.png" onclick="click76()">
+        <img title="Nautilus" class="myImg"  id="icon77" src="images/1Icon/NautilusSquare.png" alt="NautilusSquare.png"  onclick="click77()">
+        <img title="Neeko" class="myImg"  id="icon78" src="images/1Icon/NeekoSquare.png"  alt="NeekoSquare.png" onclick="click78()">
+        <img title="Nidalee" class="myImg"  id="icon79" src="images/1Icon/NidaleeSquare.png"  alt="NidaleeSquare.png" onclick="click79()">
+        <img title="Nocturne" class="myImg"  id="icon80" src="images/1Icon/NocturneSquare.png" alt="NocturneSquare.png"  onclick="click80()">
+        <img title="Nunu" class="myImg"  id="icon81" src="images/1Icon/NunuSquare.png" alt="NunuSquare.png"  onclick="click81()">
+        <img title="Olaf" class="myImg"  id="icon82" src="images/1Icon/OlafSquare.png" alt="OlafSquare.png"  onclick="click82()">
+        <img title="Orianna" class="myImg"  id="icon83" src="images/1Icon/OriannaSquare.png"  alt="OriannaSquare.png" onclick="click83()">
+        <img title="Ornn" class="myImg"  id="icon84" src="images/1Icon/OrnnSquare.png" alt="OrnnSquare.png"  onclick="click84()">
+        <img title="Pantheon" class="myImg"  id="icon85" src="images/1Icon/PantheonSquare.png" alt="PantheonSquare.png"  onclick="click85()">
+        <img title="Poppy" class="myImg"  id="icon86" src="images/1Icon/PoppySquare.png"  alt="PoppySquare.png" onclick="click86()">
+        <img title="Pyke" class="myImg"  id="icon87" src="images/1Icon/PykeSquare.png" alt="PykeSquare.png"  onclick="click87()">
+        <img title="Quinn" class="myImg"  id="icon88" src="images/1Icon/QuinnSquare.png"  alt="QuinnSquare.png" onclick="click88()">
+        <img title="Rakan" class="myImg"  id="icon89" src="images/1Icon/RakanSquare.png"  alt="RakanSquare.png" onclick="click89()">
+        <img title="Rammus" class="myImg"  id="icon90" src="images/1Icon/RammusSquare.png" alt="RammusSquare.png"  onclick="click90()">
+        <img title="Rek'Sai" class="myImg"  id="icon91" src="images/1Icon/Rek'SaiSquare.png"  alt="Rek'SaiSquare.png" onclick="click91()">
+        <img title="Renekton" class="myImg"  id="icon92" src="images/1Icon/RenektonSquare.png" alt="RenektonSquare.png"  onclick="click92()">
+        <img title="Rengar" class="myImg"  id="icon93" src="images/1Icon/RengarSquare.png" alt="RengarSquare.png"  onclick="click93()">
+        <img title="Riven" class="myImg"  id="icon94" src="images/1Icon/RivenSquare.png"  alt="RivenSquare.png" onclick="click94()">
+        <img title="Rumble" class="myImg"  id="icon95" src="images/1Icon/RumbleSquare.png" alt="RumbleSquare.png"  onclick="click95()">
+        <img title="Ryze" class="myImg"  id="icon96" src="images/1Icon/RyzeSquare.png" alt="RyzeSquare.png"  onclick="click96()">
+        <img title="Sejunai" class="myImg"  id="icon97" src="images/1Icon/SejuaniSquare.png"  alt="SejuaniSquare.png" onclick="click97()">
+        <img title="Shaco" class="myImg"  id="icon98" src="images/1Icon/ShacoSquare.png"  alt="ShacoSquare.png" onclick="click98()">
+        <img title="Shen" class="myImg"  id="icon99" src="images/1Icon/ShenSquare.png" alt="ShenSquare.png"  onclick="click99()">
+        <img title="Shyvana" class="myImg"  id="icon100"  src="images/1Icon/ShyvanaSquare.png"  alt="ShyvanaSquare.png" onclick="click100()">
+        <img title="Singed" class="myImg"  id="icon101"  src="images/1Icon/SingedSquare.png" alt="SingedSquare.png"  onclick="click101()">
+        <img title="Sion" class="myImg"  id="icon102"  src="images/1Icon/SionSquare.png" alt="SionSquare.png"  onclick="click102()">
+        <img title="Sivir" class="myImg"  id="icon103"  src="images/1Icon/SivirSquare.png"  alt="SivirSquare.png" onclick="click103()">
+        <img title="Skarner" class="myImg"  id="icon104"  src="images/1Icon/SkarnerSquare.png"  alt="SkarnerSquare.png" onclick="click104()">
+        <img title="Sona" class="myImg"  id="icon105"  src="images/1Icon/SonaSquare.png" alt="SonaSquare.png"  onclick="click105()">
+        <img title="Soraka" class="myImg"  id="icon106"  src="images/1Icon/SorakaSquare.png" alt="SorakaSquare.png"  onclick="click106()">
+        <img title="Swain" class="myImg"  id="icon107"  src="images/1Icon/SwainSquare.png"  alt="SwainSquare.png" onclick="click107()">
+        <img title="Sylas" class="myImg"  id="icon108"  src="images/1Icon/SylasSquare.png"  alt="SylasSquare.png" onclick="click108()">
+        <img title="Syndra" class="myImg"  id="icon109"  src="images/1Icon/SyndraSquare.png" alt="SyndraSquare.png"  onclick="click109()">
+        <img title="TahmKench" class="myImg"  id="icon110"  src="images/1Icon/Tahm_KenchSquare.png" alt="Tahm_KenchSquare.png"  onclick="click110()">
+        <img title="Taliyah" class="myImg"  id="icon111"  src="images/1Icon/TaliyahSquare.png"  alt="TaliyahSquare.png" onclick="click111()">
+        <img title="Talon" class="myImg"  id="icon112"  src="images/1Icon/TalonSquare.png"  alt="TalonSquare.png" onclick="click112()">
+        <img title="Taric" class="myImg"  id="icon113"  src="images/1Icon/TaricSquare.png"  alt="TaricSquare.png" onclick="click113()">
+        <img title="Teemo" class="myImg"  id="icon114"  src="images/1Icon/TeemoSquare.png"  alt="TeemoSquare.png" onclick="click114()">
+        <img title="Thresh" class="myImg"  id="icon115"  src="images/1Icon/ThreshSquare.png" alt="ThreshSquare.png"  onclick="click115()">
+        <img title="Tristana" class="myImg"  id="icon116"  src="images/1Icon/TristanaSquare.png" alt="TristanaSquare.png"  onclick="click116()">
+        <img title="Trundle" class="myImg"  id="icon117"  src="images/1Icon/TrundleSquare.png"  alt="TrundleSquare.png" onclick="click117()">
+        <img title="Tryndamere" class="myImg"  id="icon118"  src="images/1Icon/TryndamereSquare.png" alt="TryndamereSquare.png"  onclick="click118()">
+        <img title="TwistedFate" class="myImg"  id="icon119"  src="images/1Icon/Twisted_FateSquare.png" alt="Twisted_FateSquare.png"  onclick="click119()">
+        <img title="Twitch" class="myImg"  id="icon120"  src="images/1Icon/TwitchSquare.png" alt="TwitchSquare.png"  onclick="click120()">
+        <img title="Udry" class="myImg"  id="icon121"  src="images/1Icon/UdyrSquare.png" alt="UdyrSquare.png"  onclick="click121()">
+        <img title="Urgot" class="myImg"  id="icon122"  src="images/1Icon/UrgotSquare.png"  alt="UrgotSquare.png" onclick="click122()">
+        <img title="Varus" class="myImg"  id="icon123"  src="images/1Icon/VarusSquare.png"  alt="VarusSquare.png" onclick="click123()">
+        <img title="Vayne" class="myImg"  id="icon124"  src="images/1Icon/VayneSquare.png"  alt="VayneSquare.png" onclick="click124()">
+        <img title="Veigar" class="myImg"  id="icon125"  src="images/1Icon/VeigarSquare.png" alt="VeigarSquare.png"  onclick="click125()">
+        <img title="Vel'Koz" class="myImg"  id="icon126"  src="images/1Icon/Vel'KozSquare.png"  alt="Vel'KozSquare.png" onclick="click126()">
+        <img title="Viktor" class="myImg"  id="icon127"  src="images/1Icon/ViktorSquare.png" alt="ViktorSquare.png"  onclick="click127()">
+        <img title="Vi" class="myImg"  id="icon128"  src="images/1Icon/ViSquare.png" alt="ViSquare.png"  onclick="click128()">
+        <img title="Vladimir" class="myImg"  id="icon129"  src="images/1Icon/VladimirSquare.png" alt="VladimirSquare.png"  onclick="click129()">
+        <img title="Volibear" class="myImg"  id="icon130"  src="images/1Icon/VolibearSquare.png" alt="VolibearSquare.png"  onclick="click130()">
+        <img title="Warwick" class="myImg"  id="icon131"  src="images/1Icon/WarwickSquare.png"  alt="WarwickSquare.png" onclick="click131()">
+        <img title="Wukong" class="myImg"  id="icon132"  src="images/1Icon/WukongSquare.png" alt="WukongSquare.png"  onclick="click132()">
+        <img title="Xayah" class="myImg"  id="icon133"  src="images/1Icon/XayahSquare.png"  alt="XayahSquare.png" onclick="click133()">
+        <img title="Xerath" class="myImg"  id="icon134"  src="images/1Icon/XerathSquare.png" alt="XerathSquare.png"  onclick="click134()">
+        <img title="XinZhao" class="myImg"  id="icon135"  src="images/1Icon/Xin_ZhaoSquare.png" alt="Xin_ZhaoSquare.png"  onclick="click135()">
+        <img title="Yasuo" class="myImg"  id="icon136"  src="images/1Icon/YasuoSquare.png"  alt="YasuoSquare.png" onclick="click136()">
+        <img title="Yorick" class="myImg"  id="icon137"  src="images/1Icon/YorickSquare.png" alt="YorickSquare.png"  onclick="click137()">
+        <img title="Yuumi" class="myImg"  id="icon138"  src="images/1Icon/YuumiSquare.png"  alt="YuumiSquare.png" onclick="click138()">
+        <img title="Zac" class="myImg"  id="icon139"  src="images/1Icon/ZacSquare.png"  alt="ZacSquare.png" onclick="click139()">
+        <img title="Zed" class="myImg"  id="icon140"  src="images/1Icon/ZedSquare.png"  alt="ZedSquare.png" onclick="click140()">
+        <img title="Ziggs" class="myImg"  id="icon141"  src="images/1Icon/ZiggsSquare.png"  alt="ZiggsSquare.png" onclick="click141()">
+        <img title="Zilean" class="myImg"  id="icon142"  src="images/1Icon/ZileanSquare.png" alt="ZileanSquare.png"  onclick="click142()">
+        <img title="Zoe" class="myImg"  id="icon143"  src="images/1Icon/ZoeSquare.png"  alt="ZoeSquare.png" onclick="click143()">
+        <img title="Zyra" class="myImg"  id="icon144"  src="images/1Icon/ZyraSquare.png" alt="ZyraSquare.png"  onclick="click144()">
+      </div>
+      <div id="containerContent">
+        <div class="slideshow" id="slideshowA">
+          <div class="content" id="content1" style="display: none">
+            <img class="mySlides fade" src="images/Aatrox/Aatrox_OriginalSkin.jpg" alt="AatroxOriginalSkin">
+            <img class="mySlides fade" src="images/Aatrox/Aatrox_BloodMoonSkin.jpg" alt="AatroxBloodMoonSkin">
+            <img class="mySlides fade" src="images/Aatrox/Aatrox_MechaSkin.jpg" alt="AatroxMechaSkin">
+            <img class="mySlides fade" src="images/Aatrox/Aatrox_JusticarSkin.jpg" alt="AatroxJusticarSkin">
+            <img class="mySlides fade" src="images/Aatrox/Aatrox_SeaHunterSkin.jpg" alt="AatroxSeaHunterSkin">
+            <a class="prev" onclick="plusDivs(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 0)">&#10095;</a>
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center; display: ;">
+              <span class="dot" onclick="currentDiv(1, 0)"></span>
+              <span class="dot" onclick="currentDiv(2, 0)"></span>
+              <span class="dot" onclick="currentDiv(3, 0)"></span>
+              <span class="dot" onclick="currentDiv(4, 0)"></span>
+              <span class="dot" onclick="currentDiv(5, 0)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content2" style="display: none">
+            <img class="mySlides fade" src="images/Ahri/Ahri_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_DynastySkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_FoxfireSkin.jpg">    
+            <img class="mySlides fade" src="images/Ahri/Ahri_AcademySkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_ArcadeSkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_ChallengerSkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_MidnightSkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_PopstarSkin.jpg">
+            <img class="mySlides fade" src="images/Ahri/Ahri_StarGuardianSkin.jpg">    
+            <img class="mySlides fade" src="images/Ahri/Ahri_KDASkin.jpg">    
+            <img class="mySlides fade" src="images/Ahri/Ahri_PrestigeKDASkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 1)">&#10095;</a>
+            <!-- Extra plusDivs parameter refers to second (1) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 1)"></span>
+              <span class="dot" onclick="currentDiv(2, 1)"></span>
+              <span class="dot" onclick="currentDiv(3, 1)"></span>
+              <span class="dot" onclick="currentDiv(4, 1)"></span>
+              <span class="dot" onclick="currentDiv(5, 1)"></span>
+              <span class="dot" onclick="currentDiv(6, 1)"></span>
+              <span class="dot" onclick="currentDiv(7, 1)"></span>
+              <span class="dot" onclick="currentDiv(8, 1)"></span>
+              <span class="dot" onclick="currentDiv(9, 1)"></span>
+              <span class="dot" onclick="currentDiv(10, 1)"></span>
+              <span class="dot" onclick="currentDiv(11, 1)"></span>
+            </div>
+          </div>
+          ﻿
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content3" style="display: none">
+            <img class="mySlides fade" src="images/Akali/Akali_All-StarSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_BloodMoonSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_HeadhunterSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_InfernalSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_KDASkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_NurseSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_PrestigeKDASkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_SashimiSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_SilverfangSkin.jpg">
+            <img class="mySlides fade" src="images/Akali/Akali_StingerSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 2)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 2)">&#10095;</a>
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 2)"></span>
+              <span class="dot" onclick="currentDiv(2, 2)"></span>
+              <span class="dot" onclick="currentDiv(3, 2)"></span>
+              <span class="dot" onclick="currentDiv(4, 2)"></span>
+              <span class="dot" onclick="currentDiv(5, 2)"></span>
+              <span class="dot" onclick="currentDiv(6, 2)"></span>
+              <span class="dot" onclick="currentDiv(7, 2)"></span>
+              <span class="dot" onclick="currentDiv(8, 2)"></span>
+              <span class="dot" onclick="currentDiv(9, 2)"></span>
+              <span class="dot" onclick="currentDiv(10, 2)"></span>
+              <span class="dot" onclick="currentDiv(11, 2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content4" style="display: none">
+            <img class="mySlides fade" src="images/Alistar/Alistar_BlackSkin.jpg">
+            <img class="mySlides fade" src="images/Alistar/Alistar_ConquerorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_GoldenSkin.jpg">
+            <img class="mySlides fade" src="images/Alistar/Alistar_HextechSkin.jpg">
+            <img class="mySlides fade" src="images/Alistar/Alistar_InfernalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_LonghornSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_MarauderSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_MatadorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_MooCowSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_SKTT1Skin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_SweeperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Alistar/Alistar_UnchainedSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 3)">&#10095;</a>
+            <!-- <div class="caption-container">
+              <p id="caption"></p>
+              </div> -->
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 3)"></span>
+              <span class="dot" onclick="currentDiv(2, 3)"></span>
+              <span class="dot" onclick="currentDiv(3, 3)"></span>
+              <span class="dot" onclick="currentDiv(4, 3)"></span>
+              <span class="dot" onclick="currentDiv(5, 3)"></span>
+              <span class="dot" onclick="currentDiv(6, 3)"></span>
+              <span class="dot" onclick="currentDiv(7, 3)"></span>
+              <span class="dot" onclick="currentDiv(8, 3)"></span>
+              <span class="dot" onclick="currentDiv(9, 3)"></span>
+              <span class="dot" onclick="currentDiv(10, 3)"></span>
+              <span class="dot" onclick="currentDiv(11, 3)"></span>
+              <span class="dot" onclick="currentDiv(12, 3)"></span>
+              <span class="dot" onclick="currentDiv(13, 3)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content5" style="display: none">
+            <img class="mySlides fade" src="images/Amumu/Amumu_Almost-PromKingSkin.jpg">
+            <img class="mySlides fade" src="images/Amumu/Amumu_EmumuSkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_InfernalSkin.jpg">
+            <img class="mySlides fade" src="images/Amumu/Amumu_LittleKnightSkin.jpg">
+            <img class="mySlides fade" src="images/Amumu/Amumu_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_PharaohSkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_Re-GiftedSkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_SadRobotSkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_SurprisePartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Amumu/Amumu_VancouverSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 4)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 4)">&#10095;</a>
+            <!-- <div class="caption-container">
+              <p id="caption"></p>
+              </div> -->
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 4)"></span>
+              <span class="dot" onclick="currentDiv(2, 4)"></span>
+              <span class="dot" onclick="currentDiv(3, 4)"></span>
+              <span class="dot" onclick="currentDiv(4, 4)"></span>
+              <span class="dot" onclick="currentDiv(5, 4)"></span>
+              <span class="dot" onclick="currentDiv(6, 4)"></span>
+              <span class="dot" onclick="currentDiv(7, 4)"></span>
+              <span class="dot" onclick="currentDiv(8, 4)"></span>
+              <span class="dot" onclick="currentDiv(9, 4)"></span>
+              <span class="dot" onclick="currentDiv(10, 4)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content6" style="display: none">
+            <img class="mySlides fade" src="images/Anivia/Anivia_BirdofPreySkin.jpg">
+            <img class="mySlides fade" src="images/Anivia/Anivia_BlackfrostSkin.jpg"> 
+            <img class="mySlides fade" src="images/Anivia/Anivia_FestivalQueenSkin.jpg">
+            <img class="mySlides fade" src="images/Anivia/Anivia_HextechSkin.jpg">
+            <img class="mySlides fade" src="images/Anivia/Anivia_NoxusHunterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Anivia/Anivia_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Anivia/Anivia_PapercraftSkin.jpg"> 
+            <img class="mySlides fade" src="images/Anivia/Anivia_PrehistoricSkin.jpg"> 
+            <img class="mySlides fade" src="images/Anivia/Anivia_TeamSpiritSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 5)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 5)">&#10095;</a>
+            <!-- <div class="caption-container">
+              <p id="caption"></p>
+              </div> -->
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 5)"></span>
+              <span class="dot" onclick="currentDiv(2, 5)"></span>
+              <span class="dot" onclick="currentDiv(3, 5)"></span>
+              <span class="dot" onclick="currentDiv(4, 5)"></span>
+              <span class="dot" onclick="currentDiv(5, 5)"></span>
+              <span class="dot" onclick="currentDiv(6, 5)"></span>
+              <span class="dot" onclick="currentDiv(7, 5)"></span>
+              <span class="dot" onclick="currentDiv(8, 5)"></span>
+              <span class="dot" onclick="currentDiv(9, 5)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content7" style="display: none">
+            <img class="mySlides fade" src="images/Annie/Annie_AnnieinWonderlandSkin.jpg">
+            <img class="mySlides fade" src="images/Annie/Annie_FrankenTibbersSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_FrostfireSkin.jpg">
+            <img class="mySlides fade" src="images/Annie/Annie_GothSkin.jpg">
+            <img class="mySlides fade" src="images/Annie/Annie_HextechSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_PandaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_PromQueenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_RedRidingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_ReverseSkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_SuperGalaxySkin.jpg"> 
+            <img class="mySlides fade" src="images/Annie/Annie_SweetheartSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 6)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 6)">&#10095;</a>
+            <!-- <div class="caption-container">
+              <p id="caption"></p>
+              </div> -->
+            <!-- Extra plusDivs parameter refers to first (0) slideshow (start from 0) -->
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentDiv(1, 6)"></span>
+              <span class="dot" onclick="currentDiv(2, 6)"></span>
+              <span class="dot" onclick="currentDiv(3, 6)"></span>
+              <span class="dot" onclick="currentDiv(4, 6)"></span>
+              <span class="dot" onclick="currentDiv(5, 6)"></span>
+              <span class="dot" onclick="currentDiv(6, 6)"></span>
+              <span class="dot" onclick="currentDiv(7, 6)"></span>
+              <span class="dot" onclick="currentDiv(8, 6)"></span>
+              <span class="dot" onclick="currentDiv(9, 6)"></span>
+              <span class="dot" onclick="currentDiv(10, 6)"></span>
+              <span class="dot" onclick="currentDiv(11, 6)"></span>
+              <span class="dot" onclick="currentDiv(12, 6)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content8" style="display: none">
+            <img class="mySlides fade" src="images/Ashe/Ashe_AmethystSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_ChampionshipSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_CosmicQueenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_FreljordSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_HeartseekerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_MarauderSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_QueenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_SherwoodForestSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ashe/Ashe_WoadSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 7)">&#10094;</a>  
+            <a class="next" onclick="plusDivs(1, 7)">&#10095;</a>
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 7)"></span>
+              <span class="dot" onclick="currentDiv(2, 7)"></span>
+              <span class="dot" onclick="currentDiv(3, 7)"></span>
+              <span class="dot" onclick="currentDiv(4, 7)"></span>
+              <span class="dot" onclick="currentDiv(5, 7)"></span>
+              <span class="dot" onclick="currentDiv(6, 7)"></span>
+              <span class="dot" onclick="currentDiv(7, 7)"></span>
+              <span class="dot" onclick="currentDiv(8, 7)"></span>
+              <span class="dot" onclick="currentDiv(9, 7)"></span>
+              <span class="dot" onclick="currentDiv(10, 7)"></span>
+              <span class="dot" onclick="currentDiv(11, 7)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content9" style="display: none">
+            <img class="mySlides fade" src="images/AurelionSol/AurelionSol.jpg"> 
+            <img class="mySlides fade" src="images/AurelionSol/Aurelion_Sol_MechaSkin.jpg"> 
+            <img class="mySlides fade" src="images/AurelionSol/Aurelion_Sol_AshenLordSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 8)">&#10094;</a>  
+            <a class="next" onclick="plusDivs(1, 8)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center"> 
+              <span class="dot" onclick="currentDiv(1, 8)"></span>
+              <span class="dot" onclick="currentDiv(2, 8)"></span>
+              <span class="dot" onclick="currentDiv(3, 8)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content10" style="display: none">
+            <img class="mySlides fade" src="images/Azir/Azir_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Azir/Azir_GalacticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Azir/Azir_SKTT1Skin.jpg"> 
+            <img class="mySlides fade" src="images/Azir/Azir_WarringKingdomsSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 9)">&#10094;</a>  
+            <a class="next" onclick="plusDivs(1, 9)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 9)"></span>
+              <span class="dot" onclick="currentDiv(2, 9)"></span>
+              <span class="dot" onclick="currentDiv(3, 9)"></span>
+              <span class="dot" onclick="currentDiv(4, 9)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content11" style="display: none">
+            <img class="mySlides fade" src="images/Bard/Bard_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Bard/Bard_BardBardSkin.jpg"> 
+            <img class="mySlides fade" src="images/Bard/Bard_ElderwoodSkin.jpg"> 
+            <img class="mySlides fade" src="images/Bard/Bard_SnowDaySkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 10)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 10)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 10)"></span>
+              <span class="dot" onclick="currentDiv(2, 10)"></span>
+              <span class="dot" onclick="currentDiv(3, 10)"></span>
+              <span class="dot" onclick="currentDiv(4, 10)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content12" style="display: none">
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_BattleBossSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_BoomBoomSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_DefinitelyNotSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_GoalkeeperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_iBlitzcrankSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_LancerParagonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_LancerRogueSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_PiltoverCustomsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_RiotSkin.jpg"> 
+            <img class="mySlides fade" src="images/Blitz/Blitzcrank_RustySkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 11)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 11)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 11)"></span>
+              <span class="dot" onclick="currentDiv(2, 11)"></span>
+              <span class="dot" onclick="currentDiv(3, 11)"></span>
+              <span class="dot" onclick="currentDiv(4, 11)"></span>
+              <span class="dot" onclick="currentDiv(5, 11)"></span>
+              <span class="dot" onclick="currentDiv(6, 11)"></span>
+              <span class="dot" onclick="currentDiv(7, 11)"></span>
+              <span class="dot" onclick="currentDiv(8, 11)"></span>
+              <span class="dot" onclick="currentDiv(9, 11)"></span>
+              <span class="dot" onclick="currentDiv(10, 11)"></span>
+              <span class="dot" onclick="currentDiv(11, 11)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content13" style="display: none">
+            <img class="mySlides fade" src="images/Brand/Brand_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_ApocalypticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_ArclightSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_BattleBossSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_CryocoreSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_SpiritFireSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_VandalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Brand/Brand_ZombieSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 12)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 12)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 12)"></span>
+              <span class="dot" onclick="currentDiv(2, 12)"></span>
+              <span class="dot" onclick="currentDiv(3, 12)"></span>
+              <span class="dot" onclick="currentDiv(4, 12)"></span>
+              <span class="dot" onclick="currentDiv(5, 12)"></span>
+              <span class="dot" onclick="currentDiv(6, 12)"></span>
+              <span class="dot" onclick="currentDiv(7, 12)"></span>
+              <span class="dot" onclick="currentDiv(8, 12)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content14" style="display: none">
+            <img class="mySlides fade" src="images/Braum/Braum_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Braum/Braum_ElTigreSkin.jpg"> 
+            <img class="mySlides fade" src="images/Braum/Braum_DragonslayerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Braum/Braum_MafiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Braum/Braum_SantaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Braum/Braum_BraumLionheartSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 13)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 13)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 13)"></span>
+              <span class="dot" onclick="currentDiv(2, 13)"></span>
+              <span class="dot" onclick="currentDiv(3, 13)"></span>
+              <span class="dot" onclick="currentDiv(4, 13)"></span>
+              <span class="dot" onclick="currentDiv(5, 13)"></span>
+              <span class="dot" onclick="currentDiv(6, 13)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content15" style="display: none">
+            <img class="mySlides fade" src="images/Cait/Caitlyn_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_OfficerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_LunarWraithSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_HeadhunterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_ArcticWarfareSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_PulsefireSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_ResistanceSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_SafariSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cait/Caitlyn_SheriffSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 14)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 14)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 14)"></span>
+              <span class="dot" onclick="currentDiv(2, 14)"></span>
+              <span class="dot" onclick="currentDiv(3, 14)"></span>
+              <span class="dot" onclick="currentDiv(4, 14)"></span>
+              <span class="dot" onclick="currentDiv(5, 14)"></span>
+              <span class="dot" onclick="currentDiv(6, 14)"></span>
+              <span class="dot" onclick="currentDiv(7, 14)"></span>
+              <span class="dot" onclick="currentDiv(8, 14)"></span>
+              <span class="dot" onclick="currentDiv(9, 14)"></span>
+              <span class="dot" onclick="currentDiv(10, 14)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content16" style="display: none">
+            <img class="mySlides fade" src="images/Camille/Camille_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Camille/Camille_CovenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Camille/Camille_InvictusGamingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Camille/Camille_ProgramSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 15)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 15)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 15)"></span>
+              <span class="dot" onclick="currentDiv(2, 15)"></span>
+              <span class="dot" onclick="currentDiv(3, 15)"></span>
+              <span class="dot" onclick="currentDiv(4, 15)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content17" style="display: none">
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_MythicSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_SirenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_JadeFangSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_EternumSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cassiopeia/Cassiopeia_DesperadaSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 16)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 16)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center"> 
+              <span class="dot" onclick="currentDiv(1, 16)"></span>
+              <span class="dot" onclick="currentDiv(2, 16)"></span>
+              <span class="dot" onclick="currentDiv(3, 16)"></span>
+              <span class="dot" onclick="currentDiv(4, 16)"></span>
+              <span class="dot" onclick="currentDiv(5, 16)"></span>
+              <span class="dot" onclick="currentDiv(6, 16)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content18" style="display: none">
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_NightmareSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_PrehistoricSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_LochNessSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_JurassicSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_GentlemanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_DarkStarSkin.jpg"> 
+            <img class="mySlides fade" src="images/Cho'Gath/Cho'Gath_BattlecastPrimeSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 17)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 17)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 17)"></span>
+              <span class="dot" onclick="currentDiv(2, 17)"></span>
+              <span class="dot" onclick="currentDiv(3, 17)"></span>
+              <span class="dot" onclick="currentDiv(4, 17)"></span>
+              <span class="dot" onclick="currentDiv(5, 17)"></span>
+              <span class="dot" onclick="currentDiv(6, 17)"></span>
+              <span class="dot" onclick="currentDiv(7, 17)"></span>
+              <span class="dot" onclick="currentDiv(8, 17)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content19" style="display: none">
+            <img class="mySlides fade" src="images/Corki/Corki_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_RedBaronSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_IceTobogganSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_HotRodSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_FnaticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_DragonwingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_CorgiSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_ArcadeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_UFOSkin.jpg"> 
+            <img class="mySlides fade" src="images/Corki/Corki_UrfriderSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 18)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 18)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 18)"></span>
+              <span class="dot" onclick="currentDiv(2, 18)"></span>
+              <span class="dot" onclick="currentDiv(3, 18)"></span>
+              <span class="dot" onclick="currentDiv(4 18)"></span>
+              <span class="dot" onclick="currentDiv(5, 18)"></span>
+              <span class="dot" onclick="currentDiv(6, 18)"></span>
+              <span class="dot" onclick="currentDiv(7, 18)"></span>
+              <span class="dot" onclick="currentDiv(8, 18)"></span>
+              <span class="dot" onclick="currentDiv(9, 18)"></span>
+              <span class="dot" onclick="currentDiv(10, 18)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content20" style="display: none">
+            <img class="mySlides fade" src="images/Darius/Darius_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_LordSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_God-KingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_DunkmasterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_DreadnovaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_BioforgeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_AcademySkin.jpg"> 
+            <img class="mySlides fade" src="images/Darius/Darius_WoadKingSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 19)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 19)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 19)"></span>
+              <span class="dot" onclick="currentDiv(2, 19)"></span>
+              <span class="dot" onclick="currentDiv(3, 19)"></span>
+              <span class="dot" onclick="currentDiv(4, 19)"></span>
+              <span class="dot" onclick="currentDiv(5, 19)"></span>
+              <span class="dot" onclick="currentDiv(6, 19)"></span>
+              <span class="dot" onclick="currentDiv(7, 19)"></span>
+              <span class="dot" onclick="currentDiv(8, 19)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content21" style="display: none">
+            <img class="mySlides fade" src="images/Diana/Diana_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Diana/Diana_LunarGoddessSkin.jpg"> 
+            <img class="mySlides fade" src="images/Diana/Diana_InfernalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Diana/Diana_DarkWatersSkin.jpg"> 
+            <img class="mySlides fade" src="images/Diana/Diana_DarkValkyrieSkin.jpg"> 
+            <img class="mySlides fade" src="images/Diana/Diana_BloodMoonSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 20)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 20)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 20)"></span>
+              <span class="dot" onclick="currentDiv(2, 20)"></span>
+              <span class="dot" onclick="currentDiv(3, 20)"></span>
+              <span class="dot" onclick="currentDiv(4, 20)"></span>
+              <span class="dot" onclick="currentDiv(5, 20)"></span>
+              <span class="dot" onclick="currentDiv(6, 20)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content22" style="display: none">
+            <img class="mySlides fade" src="images/Draven/Draven_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_GladiatorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_DravenDravenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_BeastHunterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_PrimetimeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_SantaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Draven/Draven_SoulReaverSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 21)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 21)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 21)"></span>
+              <span class="dot" onclick="currentDiv(2, 21)"></span>
+              <span class="dot" onclick="currentDiv(3, 21)"></span>
+              <span class="dot" onclick="currentDiv(4, 21)"></span>
+              <span class="dot" onclick="currentDiv(5, 21)"></span>
+              <span class="dot" onclick="currentDiv(6, 21)"></span>
+              <span class="dot" onclick="currentDiv(7, 21)"></span>
+              <span class="dot" onclick="currentDiv(8, 21)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content23" style="display: none">
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_MundoMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_Mr.MundoverseSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_FrozenPrinceMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_ExecutionerMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_ElMachoMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_CorporateMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_PoolPartyMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_RagebornMundoSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_ToxicSkin.jpg"> 
+            <img class="mySlides fade" src="images/DrMundo/Dr._Mundo_TPAMundoSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 22)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 22)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 22)"></span>
+              <span class="dot" onclick="currentDiv(2, 22)"></span>
+              <span class="dot" onclick="currentDiv(3, 22)"></span>
+              <span class="dot" onclick="currentDiv(4, 22)"></span>
+              <span class="dot" onclick="currentDiv(5, 22)"></span>
+              <span class="dot" onclick="currentDiv(6, 22)"></span>
+              <span class="dot" onclick="currentDiv(7, 22)"></span>
+              <span class="dot" onclick="currentDiv(8, 22)"></span>
+              <span class="dot" onclick="currentDiv(9, 22)"></span>
+              <span class="dot" onclick="currentDiv(10, 22)"></span>
+              <span class="dot" onclick="currentDiv(11, 22)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content24" style="display: none">
+            <img class="mySlides fade" src="images/Ekko/Ekko_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ekko/Ekko_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ekko/Ekko_SandstormSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ekko/Ekko_SKTT1Skin.jpg"> 
+            <img class="mySlides fade" src="images/Ekko/Ekko_TrickorTreatSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ekko/Ekko_AcademySkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 23)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 23)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 23)"></span>
+              <span class="dot" onclick="currentDiv(2, 23)"></span>
+              <span class="dot" onclick="currentDiv(3, 23)"></span>
+              <span class="dot" onclick="currentDiv(4, 23)"></span>
+              <span class="dot" onclick="currentDiv(5, 23)"></span>
+              <span class="dot" onclick="currentDiv(6, 23)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content25" style="display: none">
+            <img class="mySlides fade" src="images/Elise/Elise_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Elise/Elise_DeathBlossomSkin.jpg">
+            <img class="mySlides fade" src="images/Elise/Elise_BloodMoonSkin.jpg">
+            <img class="mySlides fade" src="images/Elise/Elise_SKTT1Skin.jpg">
+            <img class="mySlides fade" src="images/Elise/Elise_SuperGalaxySkin.jpg">
+            <img class="mySlides fade" src="images/Elise/Elise_VictoriousSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 24)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 24)">&#10095;</a>
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 24)"></span>
+              <span class="dot" onclick="currentDiv(2, 24)"></span>
+              <span class="dot" onclick="currentDiv(3, 24)"></span>
+              <span class="dot" onclick="currentDiv(4, 24)"></span>
+              <span class="dot" onclick="currentDiv(5, 24)"></span>
+              <span class="dot" onclick="currentDiv(6, 24)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content26" style="display: none">
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_MasqueradeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_BloodMoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_KDASkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_PrestigeKDASkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_SafecrackerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_ShadowSkin.jpg"> 
+            <img class="mySlides fade" src="images/Evelynn/Evelynn_TangoSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 25)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 25)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 25)"></span>
+              <span class="dot" onclick="currentDiv(2, 25)"></span>
+              <span class="dot" onclick="currentDiv(3, 25)"></span>
+              <span class="dot" onclick="currentDiv(4, 25)"></span>
+              <span class="dot" onclick="currentDiv(5, 25)"></span>
+              <span class="dot" onclick="currentDiv(6, 25)"></span>
+              <span class="dot" onclick="currentDiv(7, 25)"></span>
+              <span class="dot" onclick="currentDiv(8, 25)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content27" style="display: none">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_NottinghamSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_FrostedSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_ExplorerSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_DebonairSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_BattleAcademiaSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_ArcadeSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_AceofSpadesSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_StarGuardianSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_PajamaGuardianSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_SSGSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_PulsefireSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_StrikerSkin.jpg">
+            <img class="mySlides fade" src="images/Ezreal/Ezreal_TPASkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 26)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 26)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 26)"></span>
+              <span class="dot" onclick="currentDiv(2, 26)"></span>
+              <span class="dot" onclick="currentDiv(3, 26)"></span>
+              <span class="dot" onclick="currentDiv(4, 26)"></span>
+              <span class="dot" onclick="currentDiv(5, 26)"></span>
+              <span class="dot" onclick="currentDiv(6, 26)"></span>
+              <span class="dot" onclick="currentDiv(7, 26)"></span>
+              <span class="dot" onclick="currentDiv(8, 26)"></span>
+              <span class="dot" onclick="currentDiv(9, 26)"></span>
+              <span class="dot" onclick="currentDiv(10, 26)"></span>
+              <span class="dot" onclick="currentDiv(11, 26)"></span>
+              <span class="dot" onclick="currentDiv(12, 26)"></span>
+              <span class="dot" onclick="currentDiv(13, 26)"></span>
+              <span class="dot" onclick="currentDiv(14, 26)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content28" style="display: none">
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_FiddleMeTimbersSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_DarkCandySkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_BanditoSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_PraetorianSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_PumpkinheadSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_RisenSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_SpectralSkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_SurprisePartySkin.jpg"> 
+            <img class="mySlides fade" src="images/FiddleSticks/Fiddlesticks_UnionJackSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 27)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 27)">&#10095;</a>
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 27)"></span>
+              <span class="dot" onclick="currentDiv(2, 27)"></span>
+              <span class="dot" onclick="currentDiv(3, 27)"></span>
+              <span class="dot" onclick="currentDiv(4, 27)"></span>
+              <span class="dot" onclick="currentDiv(5, 27)"></span>
+              <span class="dot" onclick="currentDiv(6, 27)"></span>
+              <span class="dot" onclick="currentDiv(7, 27)"></span>
+              <span class="dot" onclick="currentDiv(8, 27)"></span>
+              <span class="dot" onclick="currentDiv(9, 27)"></span>
+              <span class="dot" onclick="currentDiv(10, 27)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content29" style="display: none">
+            <img class="mySlides fade" src="images/Fiora/Fiora_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_NightravenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_InvictusGamingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_HeartpiercerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_HeadmistressSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_RoyalGuardSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fiora/Fiora_SoaringSwordSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 28)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 28)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 28)"></span>
+              <span class="dot" onclick="currentDiv(2, 28)"></span>
+              <span class="dot" onclick="currentDiv(3, 28)"></span>
+              <span class="dot" onclick="currentDiv(4, 28)"></span>
+              <span class="dot" onclick="currentDiv(5, 28)"></span>
+              <span class="dot" onclick="currentDiv(6, 28)"></span>
+              <span class="dot" onclick="currentDiv(7, 28)"></span>
+              <span class="dot" onclick="currentDiv(8, 28)"></span>
+              <span class="dot" onclick="currentDiv(9, 28)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content30" style="display: none">
+            <img class="mySlides fade" src="images/Fizz/Fizz_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_OmegaSquadSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_FishermanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_CottontailSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_AtlanteanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_FuzzSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_PrestigeFuzzSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_SuperGalaxySkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_TundraSkin.jpg"> 
+            <img class="mySlides fade" src="images/Fizz/Fizz_VoidSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 29)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 29)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 29)"></span>
+              <span class="dot" onclick="currentDiv(2, 29)"></span>
+              <span class="dot" onclick="currentDiv(3, 29)"></span>
+              <span class="dot" onclick="currentDiv(4, 29)"></span>
+              <span class="dot" onclick="currentDiv(5, 29)"></span>
+              <span class="dot" onclick="currentDiv(6, 29)"></span>
+              <span class="dot" onclick="currentDiv(7, 29)"></span>
+              <span class="dot" onclick="currentDiv(8, 29)"></span>
+              <span class="dot" onclick="currentDiv(9, 29)"></span>
+              <span class="dot" onclick="currentDiv(10, 29)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content31" style="display: none">
+            <img class="mySlides fade" src="images/Galio/Galio_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Galio/Galio_HextechSkin.jpg">
+            <img class="mySlides fade" src="images/Galio/Galio_GatekeeperSkin.jpg">
+            <img class="mySlides fade" src="images/Galio/Galio_EnchantedSkin.jpg">
+            <img class="mySlides fade" src="images/Galio/Galio_DebonairSkin.jpg">
+            <img class="mySlides fade" src="images/Galio/Galio_CommandoSkin.jpg">
+            <img class="mySlides fade" src="images/Galio/Galio_BirdioSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 30)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 30)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 30)"></span>
+              <span class="dot" onclick="currentDiv(2, 30)"></span>
+              <span class="dot" onclick="currentDiv(3, 30)"></span>
+              <span class="dot" onclick="currentDiv(4, 30)"></span>
+              <span class="dot" onclick="currentDiv(5, 30)"></span>
+              <span class="dot" onclick="currentDiv(6, 30)"></span>
+              <span class="dot" onclick="currentDiv(7, 30)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content32" style="display: none">
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_MinutemanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_DreadnovaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_CaptainSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_SailorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_SpecialForcesSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_SpookySkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_SultanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gangplank/Gangplank_ToySoldierSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 31)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 31)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 31)"></span>
+              <span class="dot" onclick="currentDiv(2, 31)"></span>
+              <span class="dot" onclick="currentDiv(3, 31)"></span>
+              <span class="dot" onclick="currentDiv(4, 31)"></span>
+              <span class="dot" onclick="currentDiv(5, 31)"></span>
+              <span class="dot" onclick="currentDiv(6, 31)"></span>
+              <span class="dot" onclick="currentDiv(7, 31)"></span>
+              <span class="dot" onclick="currentDiv(8, 31)"></span>
+              <span class="dot" onclick="currentDiv(9, 31)"></span>
+              <span class="dot" onclick="currentDiv(10, 31)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content33" style="display: none">
+            <img class="mySlides fade" src="images/Garen/Garen_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_God-KingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_DreadknightSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_DesertTrooperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_CommandoSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_RogueAdmiralSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_RuggedSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_SanguineSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_SteelLegionSkin.jpg"> 
+            <img class="mySlides fade" src="images/Garen/Garen_WarringKingdomsSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 32)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 32)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 32)"></span>
+              <span class="dot" onclick="currentDiv(2, 32)"></span>
+              <span class="dot" onclick="currentDiv(3, 32)"></span>
+              <span class="dot" onclick="currentDiv(4, 32)"></span>
+              <span class="dot" onclick="currentDiv(5, 32)"></span>
+              <span class="dot" onclick="currentDiv(6, 32)"></span>
+              <span class="dot" onclick="currentDiv(7, 32)"></span>
+              <span class="dot" onclick="currentDiv(8, 32)"></span>
+              <span class="dot" onclick="currentDiv(9, 32)"></span>
+              <span class="dot" onclick="currentDiv(10, 32)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content34" style="display: none">
+            <img class="mySlides fade" src="images/Gnar/Gnar_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_GentlemanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_ElLeónSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_DinoSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_SnowDaySkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_SSGSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gnar/Gnar_SuperGalaxySkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 33)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 33)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 33)"></span>
+              <span class="dot" onclick="currentDiv(2, 33)"></span>
+              <span class="dot" onclick="currentDiv(3, 33)"></span>
+              <span class="dot" onclick="currentDiv(4, 33)"></span>
+              <span class="dot" onclick="currentDiv(5, 33)"></span>
+              <span class="dot" onclick="currentDiv(6, 33)"></span>
+              <span class="dot" onclick="currentDiv(7, 33)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content35" style="display: none">
+            <img class="mySlides fade" src="images/Gragas/Gragas_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_OktoberfestSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_HillbillySkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_GragasCaskbreakerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_Gragas,Esq.Skin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_FnaticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_ArcticOpsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_SantaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_ScubaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_SuperfanSkin.jpg"> 
+            <img class="mySlides fade" src="images/Gragas/Gragas_VandalSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 34)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 34)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 34)"></span>
+              <span class="dot" onclick="currentDiv(2, 34)"></span>
+              <span class="dot" onclick="currentDiv(3, 34)"></span>
+              <span class="dot" onclick="currentDiv(4, 34)"></span>
+              <span class="dot" onclick="currentDiv(5, 34)"></span>
+              <span class="dot" onclick="currentDiv(6, 34)"></span>
+              <span class="dot" onclick="currentDiv(7, 34)"></span>
+              <span class="dot" onclick="currentDiv(8, 34)"></span>
+              <span class="dot" onclick="currentDiv(9, 34)"></span>
+              <span class="dot" onclick="currentDiv(10, 34)"></span>
+              <span class="dot" onclick="currentDiv(11, 34)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content36" style="display: none">
+            <img class="mySlides fade" src="images/Graves/Graves_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_MafiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_JailbreakSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_HiredGunSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_CutthroatSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_BattleProfessorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_PraetorianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_RiotSkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_SnowDaySkin.jpg"> 
+            <img class="mySlides fade" src="images/Graves/Graves_VictoriousSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 35)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 35)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 35)"></span>
+              <span class="dot" onclick="currentDiv(2, 35)"></span>
+              <span class="dot" onclick="currentDiv(3, 35)"></span>
+              <span class="dot" onclick="currentDiv(4, 35)"></span>
+              <span class="dot" onclick="currentDiv(5, 35)"></span>
+              <span class="dot" onclick="currentDiv(6, 35)"></span>
+              <span class="dot" onclick="currentDiv(7, 35)"></span>
+              <span class="dot" onclick="currentDiv(8, 35)"></span>
+              <span class="dot" onclick="currentDiv(9, 35)"></span>
+              <span class="dot" onclick="currentDiv(10, 35)"></span>
+              <span class="dot" onclick="currentDiv(11, 35)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content37" style="display: none">
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_LancerZeroSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_HeadlessSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_ElderwoodSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_BloodKnightSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_ArcadeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_ReaperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Hecarim/Hecarim_WorldbreakerSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 36)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 36)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 36)"></span>
+              <span class="dot" onclick="currentDiv(2, 36)"></span>
+              <span class="dot" onclick="currentDiv(3, 36)"></span>
+              <span class="dot" onclick="currentDiv(4, 36)"></span>
+              <span class="dot" onclick="currentDiv(5, 36)"></span>
+              <span class="dot" onclick="currentDiv(6, 36)"></span>
+              <span class="dot" onclick="currentDiv(7, 36)"></span>
+              <span class="dot" onclick="currentDiv(8, 36)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content38" style="display: none">
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_HazmatSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_DragonTrainerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_BlastZoneSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_AlienInvaderSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_PiltoverCustomsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Heimerdinger/Heimerdinger_SnowmerdingerSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 37)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 37)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 37)"></span>
+              <span class="dot" onclick="currentDiv(2, 37)"></span>
+              <span class="dot" onclick="currentDiv(3, 37)"></span>
+              <span class="dot" onclick="currentDiv(4, 37)"></span>
+              <span class="dot" onclick="currentDiv(5, 37)"></span>
+              <span class="dot" onclick="currentDiv(6, 37)"></span>
+              <span class="dot" onclick="currentDiv(7, 37)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content39" style="display: none">
+            <img class="mySlides fade" src="images/Illaoi/Illaoi_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Illaoi/Illaoi_ResistanceSkin.jpg"> 
+            <img class="mySlides fade" src="images/Illaoi/Illaoi_VoidBringerSkin.jpg">  
+            <a class="prev" onclick="plusDivs(-1, 38)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 38)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 38)"></span>
+              <span class="dot" onclick="currentDiv(2, 38)"></span>
+              <span class="dot" onclick="currentDiv(3, 38)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content40" style="display: none">
+            <img class="mySlides fade" src="images/Irelia/Irelia_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_OrderoftheLotusSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_NightbladeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_InvictusGamingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_InfiltratorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_FrostbladeSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_DivineSwordSkin.jpg"> 
+            <img class="mySlides fade" src="images/Irelia/Irelia_AviatorSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 39)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 39)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 39)"></span>
+              <span class="dot" onclick="currentDiv(2, 39)"></span>
+              <span class="dot" onclick="currentDiv(3, 39)"></span>
+              <span class="dot" onclick="currentDiv(4, 39)"></span>
+              <span class="dot" onclick="currentDiv(5, 39)"></span>
+              <span class="dot" onclick="currentDiv(6, 39)"></span>
+              <span class="dot" onclick="currentDiv(7, 39)"></span>
+              <span class="dot" onclick="currentDiv(8, 39)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content41" style="display: none">
+            <img class="mySlides fade" src="images/Ivern/Ivern_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ivern/Ivern_DunkmasterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Ivern/Ivern_CandyKingSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 40)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 40)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 40)"></span>
+              <span class="dot" onclick="currentDiv(2, 40)"></span>
+              <span class="dot" onclick="currentDiv(3, 40)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content42" style="display: none">
+            <img class="mySlides fade" src="images/Janna/Janna_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_HextechSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_FrostQueenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_ForecastSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_FnaticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_BewitchingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_SacredSwordSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_StarGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_TempestSkin.jpg"> 
+            <img class="mySlides fade" src="images/Janna/Janna_VictoriousSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 41)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 41)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 41)"></span>
+              <span class="dot" onclick="currentDiv(2, 41)"></span>
+              <span class="dot" onclick="currentDiv(3, 41)"></span>
+              <span class="dot" onclick="currentDiv(4, 41)"></span>
+              <span class="dot" onclick="currentDiv(5, 41)"></span>
+              <span class="dot" onclick="currentDiv(6, 41)"></span>
+              <span class="dot" onclick="currentDiv(7, 41)"></span>
+              <span class="dot" onclick="currentDiv(8, 41)"></span>
+              <span class="dot" onclick="currentDiv(9, 41)"></span>
+              <span class="dot" onclick="currentDiv(10, 41)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content43" style="display: none">
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_HextechSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_FnaticSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_DragonslayerSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_DarkStarSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_DarkforgeSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_CommandoSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_SSGSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_VictoriousSkin.jpg"> 
+            <img class="mySlides fade" src="images/JarvenIV/Jarvan_IV_WarringKingdomsSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 42)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 42)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 42)"></span>
+              <span class="dot" onclick="currentDiv(2, 42)"></span>
+              <span class="dot" onclick="currentDiv(3, 42)"></span>
+              <span class="dot" onclick="currentDiv(4, 42)"></span>
+              <span class="dot" onclick="currentDiv(5, 42)"></span>
+              <span class="dot" onclick="currentDiv(6, 42)"></span>
+              <span class="dot" onclick="currentDiv(7, 42)"></span>
+              <span class="dot" onclick="currentDiv(8, 42)"></span>
+              <span class="dot" onclick="currentDiv(9, 42)"></span>
+              <span class="dot" onclick="currentDiv(10, 42)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content44" style="display: none">
+            <img class="mySlides fade" src="images/jax/Jax_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_NemesisSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_JaximusSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_GodStaffSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_AnglerSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_PAXSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_SKTT1Skin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_TempleSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_TheMightySkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_VandalSkin.jpg"> 
+            <img class="mySlides fade" src="images/jax/Jax_WardenSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 43)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 43)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 43)"></span>
+              <span class="dot" onclick="currentDiv(2, 43)"></span>
+              <span class="dot" onclick="currentDiv(3, 43)"></span>
+              <span class="dot" onclick="currentDiv(4, 43)"></span>
+              <span class="dot" onclick="currentDiv(5, 43)"></span>
+              <span class="dot" onclick="currentDiv(6, 43)"></span>
+              <span class="dot" onclick="currentDiv(7, 43)"></span>
+              <span class="dot" onclick="currentDiv(8, 43)"></span>
+              <span class="dot" onclick="currentDiv(9, 43)"></span>
+              <span class="dot" onclick="currentDiv(10, 43)"></span>
+              <span class="dot" onclick="currentDiv(11, 43)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content45" style="display: none">
+            <img class="mySlides fade" src="images/Jayce/Jayce_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jayce/Jayce_JayceBrighthammerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jayce/Jayce_FullMetalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jayce/Jayce_ForsakenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jayce/Jayce_DebonairSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jayce/Jayce_BattleAcademiaSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 44)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 44)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 44)"></span>
+              <span class="dot" onclick="currentDiv(2, 44)"></span>
+              <span class="dot" onclick="currentDiv(3, 44)"></span>
+              <span class="dot" onclick="currentDiv(4, 44)"></span>
+              <span class="dot" onclick="currentDiv(5, 44)"></span>
+              <span class="dot" onclick="currentDiv(6, 44)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content46" style="display: none">
+            <img class="mySlides fade" src="images/Jhin/Jhin_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jhin/Jhin_HighNoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jhin/Jhin_BloodMoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jhin/Jhin_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jhin/Jhin_SKTT1Skin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 45)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 45)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 45)"></span>
+              <span class="dot" onclick="currentDiv(2, 45)"></span>
+              <span class="dot" onclick="currentDiv(3, 45)"></span>
+              <span class="dot" onclick="currentDiv(4, 45)"></span>
+              <span class="dot" onclick="currentDiv(5, 45)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content47" style="display: none">
+            <img class="mySlides fade" src="images/Jinx/Jinx_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_OdysseySkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_MafiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_FirecrackerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_AmbitiousElfSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_SlayerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Jinx/Jinx_StarGuardianSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 46)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 46)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 46)"></span>
+              <span class="dot" onclick="currentDiv(2, 46)"></span>
+              <span class="dot" onclick="currentDiv(3, 46)"></span>
+              <span class="dot" onclick="currentDiv(4, 46)"></span>
+              <span class="dot" onclick="currentDiv(5, 46)"></span>
+              <span class="dot" onclick="currentDiv(6, 46)"></span>
+              <span class="dot" onclick="currentDiv(7, 46)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content48" style="display: none">
+            <img class="mySlides fade" src="images/Kai'Sa/Kai'Sa_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Kai'Sa/Kai'Sa_BulletAngelSkin.jpg">
+            <img class="mySlides fade" src="images/Kai'Sa/Kai'Sa_InvictusGamingSkin.jpg">
+            <img class="mySlides fade" src="images/Kai'Sa/Kai'Sa_KDASkin.jpg">
+            <img class="mySlides fade" src="images/Kai'Sa/Kai'Sa_PrestigeKDASkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 47)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 47)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 47)"></span>
+              <span class="dot" onclick="currentDiv(2, 47)"></span>
+              <span class="dot" onclick="currentDiv(3, 47)"></span>
+              <span class="dot" onclick="currentDiv(4, 47)"></span>
+              <span class="dot" onclick="currentDiv(5, 47)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content49" style="display: none">
+            <img class="mySlides fade" src="images/Kalista/Kalista_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kalista/Kalista_ChampionshipSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kalista/Kalista_BloodMoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kalista/Kalista_SKTT1Skin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 48)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 48)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 48)"></span>
+              <span class="dot" onclick="currentDiv(2, 48)"></span>
+              <span class="dot" onclick="currentDiv(3, 48)"></span>
+              <span class="dot" onclick="currentDiv(4, 48)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content50" style="display: none">
+            <img class="mySlides fade" src="images/Karma/Karma_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_OrderoftheLotusSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_ConquerorSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_SakuraSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_SunGoddessSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_TraditionalSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_WardenSkin.jpg">
+            <img class="mySlides fade" src="images/Karma/Karma_WinterWonderSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 49)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 49)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 49)"></span>
+              <span class="dot" onclick="currentDiv(2, 49)"></span>
+              <span class="dot" onclick="currentDiv(3, 49)"></span>
+              <span class="dot" onclick="currentDiv(4, 49)"></span>
+              <span class="dot" onclick="currentDiv(5, 49)"></span>
+              <span class="dot" onclick="currentDiv(6, 49)"></span>
+              <span class="dot" onclick="currentDiv(7, 49)"></span>
+              <span class="dot" onclick="currentDiv(8, 49)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content51" style="display: none">
+            <img class="mySlides fade" src="images/Karthus/Karthus_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_KarthusLightsbaneSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_GrimReaperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_FnaticSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_PentakillSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_PhantomSkin.jpg"> 
+            <img class="mySlides fade" src="images/Karthus/Karthus_StatueofKarthusSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 50)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 50)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 50)"></span>
+              <span class="dot" onclick="currentDiv(2, 50)"></span>
+              <span class="dot" onclick="currentDiv(3, 50)"></span>
+              <span class="dot" onclick="currentDiv(4, 50)"></span>
+              <span class="dot" onclick="currentDiv(5, 50)"></span>
+              <span class="dot" onclick="currentDiv(6, 50)"></span>
+              <span class="dot" onclick="currentDiv(7, 50)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content52" style="display: none">
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_HarbingerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_FestivalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_DeepOneSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_CosmicReaverSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kassadin/Kassadin_Pre-VoidSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 51)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 51)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 51)"></span>
+              <span class="dot" onclick="currentDiv(2, 51)"></span>
+              <span class="dot" onclick="currentDiv(3, 51)"></span>
+              <span class="dot" onclick="currentDiv(4, 51)"></span>
+              <span class="dot" onclick="currentDiv(5, 51)"></span>
+              <span class="dot" onclick="currentDiv(6, 51)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content53" style="display: none">
+            <img class="mySlides fade" src="images/Katarina/Katarina_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_MercenarySkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_KittyCatSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_HighCommandSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_DeathSwornSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_BilgewaterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_RedCardSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_SandstormSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_SlayBelleSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_WarringKingdomsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Katarina/Katarina_BattleAcademiaSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 52)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 52)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 52)"></span>
+              <span class="dot" onclick="currentDiv(2, 52)"></span>
+              <span class="dot" onclick="currentDiv(3, 52)"></span>
+              <span class="dot" onclick="currentDiv(4, 52)"></span>
+              <span class="dot" onclick="currentDiv(5, 52)"></span>
+              <span class="dot" onclick="currentDiv(6, 52)"></span>
+              <span class="dot" onclick="currentDiv(7, 52)"></span>
+              <span class="dot" onclick="currentDiv(8, 52)"></span>
+              <span class="dot" onclick="currentDiv(9, 52)"></span>
+              <span class="dot" onclick="currentDiv(10, 52)"></span>
+              <span class="dot" onclick="currentDiv(11, 52)"></span>
+              <span class="dot" onclick="currentDiv(12, 52)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content54" style="display: none">
+            <img class="mySlides fade" src="images/Kayle/Kayle_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_JudgmentSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_IronInquisitorSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_BattlebornSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_AetherWingSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_PentakillSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_RiotSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_SilverSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_TranscendedSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayle/Kayle_ViridianSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 53)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 53)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 53)"></span>
+              <span class="dot" onclick="currentDiv(2, 53)"></span>
+              <span class="dot" onclick="currentDiv(3, 53)"></span>
+              <span class="dot" onclick="currentDiv(4, 53)"></span>
+              <span class="dot" onclick="currentDiv(5, 53)"></span>
+              <span class="dot" onclick="currentDiv(6, 53)"></span>
+              <span class="dot" onclick="currentDiv(7, 53)"></span>
+              <span class="dot" onclick="currentDiv(8, 53)"></span>
+              <span class="dot" onclick="currentDiv(9, 53)"></span>
+              <span class="dot" onclick="currentDiv(10, 53)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content55" style="display: none">
+            <img class="mySlides fade" src="images/Kayn/Kayn_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayn/Kayn_OdysseySkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayn/Kayn_SoulhunterSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayn/Rhaast_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kayn/Shadow_Assassin_OriginalSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 54)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 54)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 54)"></span>
+              <span class="dot" onclick="currentDiv(2, 54)"></span>
+              <span class="dot" onclick="currentDiv(3, 54)"></span>
+              <span class="dot" onclick="currentDiv(4, 54)"></span>
+              <span class="dot" onclick="currentDiv(5, 54)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content56" style="display: none">
+            <img class="mySlides fade" src="images/Kennen/Kennen_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_KennenM.D.Skin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_KarateSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_DeadlySkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_BloodMoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_ArcticOpsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_SuperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kennen/Kennen_SwampMasterSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 55)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 55)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 55)"></span>
+              <span class="dot" onclick="currentDiv(2, 55)"></span>
+              <span class="dot" onclick="currentDiv(3, 55)"></span>
+              <span class="dot" onclick="currentDiv(4, 55)"></span>
+              <span class="dot" onclick="currentDiv(5, 55)"></span>
+              <span class="dot" onclick="currentDiv(6, 55)"></span>
+              <span class="dot" onclick="currentDiv(7, 55)"></span>
+              <span class="dot" onclick="currentDiv(8, 55)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content57" style="display: none">
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_MechaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_GuardianoftheSandsSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_DeathBlossomSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_DarkStarSkin.jpg">  
+            <img class="mySlides fade" src="images/Kha'Zix/Kha'Zix_ChampionshipSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 56)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 56)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 56)"></span>
+              <span class="dot" onclick="currentDiv(2, 56)"></span>
+              <span class="dot" onclick="currentDiv(3, 56)"></span>
+              <span class="dot" onclick="currentDiv(4, 56)"></span>
+              <span class="dot" onclick="currentDiv(5, 56)"></span>
+              <span class="dot" onclick="currentDiv(6, 56)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content58" style="display: none">
+            <img class="mySlides fade" src="images/Kindred/Kindred_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kindred/Kindred_ShadowfireSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kindred/Kindred_SuperGalaxySkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 57)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 57)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 57)"></span>
+              <span class="dot" onclick="currentDiv(2, 57)"></span>
+              <span class="dot" onclick="currentDiv(3, 57)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content59" style="display: none">
+            <img class="mySlides fade" src="images/Kled/Kled_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kled/Kled_CountKledulaSkin.jpg">
+            <img class="mySlides fade" src="images/Kled/Kled_SirSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 58)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 58)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 58)"></span>
+              <span class="dot" onclick="currentDiv(2, 58)"></span>
+              <span class="dot" onclick="currentDiv(3, 58)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content60" style="display: none">
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_MonarchSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_LionDanceSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_JurassicSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_HextechSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_DeepSeaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_CaterpillarSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_BattlecastSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_Pug'MawSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_ReindeerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Kog'Maw/Kog'Maw_SonoranSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 59)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 59)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 59)"></span>
+              <span class="dot" onclick="currentDiv(2, 59)"></span>
+              <span class="dot" onclick="currentDiv(3, 59)"></span>
+              <span class="dot" onclick="currentDiv(4, 59)"></span>
+              <span class="dot" onclick="currentDiv(5, 59)"></span>
+              <span class="dot" onclick="currentDiv(6, 59)"></span>
+              <span class="dot" onclick="currentDiv(7, 59)"></span>
+              <span class="dot" onclick="currentDiv(8, 59)"></span>
+              <span class="dot" onclick="currentDiv(9, 59)"></span>
+              <span class="dot" onclick="currentDiv(10, 59)"></span>
+              <span class="dot" onclick="currentDiv(11, 59)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content61" style="display: none">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_MistletoeSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_InvictusGamingSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_ElderwoodSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_PrestigiousSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_ProgramSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_RavenbornSkin.jpg">
+            <img class="mySlides fade" src="images/LeBlanc/LeBlanc_WickedSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 60)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 60)">&#10095;</a>  <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 60)"></span>
+              <span class="dot" onclick="currentDiv(2, 60)"></span>
+              <span class="dot" onclick="currentDiv(3, 60)"></span>
+              <span class="dot" onclick="currentDiv(4, 60)"></span>
+              <span class="dot" onclick="currentDiv(5, 60)"></span>
+              <span class="dot" onclick="currentDiv(6, 60)"></span>
+              <span class="dot" onclick="currentDiv(7, 60)"></span>
+              <span class="dot" onclick="currentDiv(8, 60)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content62" style="display: none">
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_MuayThaiSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_KnockoutSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_GodFistSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_DragonFistSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_AcolyteSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_PlaymakerSkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_SKTT1Skin.jpg"> 
+            <img class="mySlides fade" src="images/LeeSin/Lee_Sin_TraditionalSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 61)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 61)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 61)"></span>
+              <span class="dot" onclick="currentDiv(2, 61)"></span>
+              <span class="dot" onclick="currentDiv(3, 61)"></span>
+              <span class="dot" onclick="currentDiv(4, 61)"></span>
+              <span class="dot" onclick="currentDiv(5, 61)"></span>
+              <span class="dot" onclick="currentDiv(6, 61)"></span>
+              <span class="dot" onclick="currentDiv(7, 61)"></span>
+              <span class="dot" onclick="currentDiv(8, 61)"></span>
+              <span class="dot" onclick="currentDiv(9, 61)"></span>
+              <span class="dot" onclick="currentDiv(10, 61)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content63" style="display: none">
+            <img class="mySlides fade" src="images/Leona/Leona_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_LunarEclipseSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_IronSolariSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_DefenderSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_BarbecueSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_SolarEclipseSkin.jpg"> 
+            <img class="mySlides fade" src="images/Leona/Leona_ValkyrieSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 62)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 62)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 62)"></span>
+              <span class="dot" onclick="currentDiv(2, 62)"></span>
+              <span class="dot" onclick="currentDiv(3, 62)"></span>
+              <span class="dot" onclick="currentDiv(4, 62)"></span>
+              <span class="dot" onclick="currentDiv(5, 62)"></span>
+              <span class="dot" onclick="currentDiv(6, 62)"></span>
+              <span class="dot" onclick="currentDiv(7, 62)"></span>
+              <span class="dot" onclick="currentDiv(8, 62)"></span>
+              <span class="dot" onclick="currentDiv(9, 62)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content64" style="display: none">
+            <img class="mySlides fade" src="images/Lissandra/Lissandra_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lissandra/Lissandra_CovenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lissandra/Lissandra_BloodstoneSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lissandra/Lissandra_BladeQueenSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lissandra/Lissandra_ProgramSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 63)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 63)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 63)"></span>
+              <span class="dot" onclick="currentDiv(2, 63)"></span>
+              <span class="dot" onclick="currentDiv(3, 63)"></span>
+              <span class="dot" onclick="currentDiv(4, 63)"></span>
+              <span class="dot" onclick="currentDiv(5, 63)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content65" style="display: none">
+            <img class="mySlides fade" src="images/Lucian/Lucian_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Lucian/Lucian_HiredGunSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lucian/Lucian_HighNoonSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lucian/Lucian_HeartseekerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lucian/Lucian_PROJECTSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lucian/Lucian_StrikerSkin.jpg">  
+            <a class="prev" onclick="plusDivs(-1, 64)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 64)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+              <span class="dot" onclick="currentDiv(1, 64)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content66" style="display: none">
+            <img class="mySlides fade" src="images/Lulu/Lulu_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_DragonTrainerSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_CosmicEnchantressSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_BittersweetSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_PajamaGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_StarGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_WickedSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lulu/Lulu_WinterWonderSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 65)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 65)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 65)"></span>
+              <span class="dot" onclick="currentDiv(2, 65)"></span>
+              <span class="dot" onclick="currentDiv(3, 65)"></span>
+              <span class="dot" onclick="currentDiv(4, 65)"></span>
+              <span class="dot" onclick="currentDiv(5, 65)"></span>
+              <span class="dot" onclick="currentDiv(6, 65)"></span>
+              <span class="dot" onclick="currentDiv(7, 65)"></span>
+              <span class="dot" onclick="currentDiv(8, 65)"></span>
+              <span class="dot" onclick="currentDiv(9, 65)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content67" style="display: none">
+            <img class="mySlides fade" src="images/Lux/Lux_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_LunarEmpressSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_ImperialSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_ElementalistSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_CommandoSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_BattleAcademiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_PrestigeBattleAcademiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_StarGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_PajamaGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_SpellthiefSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_SorceressSkin.jpg"> 
+            <img class="mySlides fade" src="images/Lux/Lux_SteelLegionSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 66)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 66)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 66)"></span>
+              <span class="dot" onclick="currentDiv(2, 66)"></span>
+              <span class="dot" onclick="currentDiv(3, 66)"></span>
+              <span class="dot" onclick="currentDiv(4, 66)"></span>
+              <span class="dot" onclick="currentDiv(5, 66)"></span>
+              <span class="dot" onclick="currentDiv(6, 66)"></span>
+              <span class="dot" onclick="currentDiv(7, 66)"></span>
+              <span class="dot" onclick="currentDiv(8, 66)"></span>
+              <span class="dot" onclick="currentDiv(9, 66)"></span>
+              <span class="dot" onclick="currentDiv(10, 66)"></span>
+              <span class="dot" onclick="currentDiv(11, 66)"></span>
+              <span class="dot" onclick="currentDiv(12, 66)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content68" style="display: none">
+            <img class="mySlides fade" src="images/Malphite/Malphite_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_OdysseySkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_ObsidianSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_MechaSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_MarbleSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_IronsideSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_GlacialSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_CoralReefSkin.jpg"> 
+            <img class="mySlides fade" src="images/Malphite/Malphite_ShamrockSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 67)">&#10094;</a>
+            <a class="next" onclick="plusDivs(1, 67)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 67)"></span>
+              <span class="dot" onclick="currentDiv(2, 67)"></span>
+              <span class="dot" onclick="currentDiv(3, 67)"></span>
+              <span class="dot" onclick="currentDiv(4, 67)"></span>
+              <span class="dot" onclick="currentDiv(5, 67)"></span>
+              <span class="dot" onclick="currentDiv(6, 67)"></span>
+              <span class="dot" onclick="currentDiv(7, 67)"></span>
+              <span class="dot" onclick="currentDiv(8, 67)"></span>
+              <span class="dot" onclick="currentDiv(9, 67)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content69" style="display: none">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_OriginalSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_HextechSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_DjinnSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_BattleBossSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_OverlordSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_ShadowPrinceSkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_SnowDaySkin.jpg">
+            <img class="mySlides fade" src="images/Malzahar/Malzahar_VizierSkin.jpg">
+            <a class="prev" onclick="plusDivs(-1, 68)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 68)">&#10095;</a> 
+            <br>  
+            <div style="text-align:center">  
+              <span class="dot" onclick="currentDiv(1, 68)"></span>
+              <span class="dot" onclick="currentDiv(2, 68)"></span>
+              <span class="dot" onclick="currentDiv(3, 68)"></span>
+              <span class="dot" onclick="currentDiv(4, 68)"></span>
+              <span class="dot" onclick="currentDiv(5, 68)"></span>
+              <span class="dot" onclick="currentDiv(6, 68)"></span>
+              <span class="dot" onclick="currentDiv(7, 68)"></span>
+              <span class="dot" onclick="currentDiv(8, 68)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content70" style="display: none">
+            <img class="mySlides fade" src="images/Maokai/Maokai_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_MeowkaiSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_HauntedSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_GoalkeeperSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_FestiveSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_CharredSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_TotemicSkin.jpg"> 
+            <img class="mySlides fade" src="images/Maokai/Maokai_VictoriousSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 69)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 69)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 69)"></span>
+              <span class="dot" onclick="currentDiv(2, 69)"></span>
+              <span class="dot" onclick="currentDiv(3, 69)"></span>
+              <span class="dot" onclick="currentDiv(4, 69)"></span>
+              <span class="dot" onclick="currentDiv(5, 69)"></span>
+              <span class="dot" onclick="currentDiv(6, 69)"></span>
+              <span class="dot" onclick="currentDiv(7, 69)"></span>
+              <span class="dot" onclick="currentDiv(8, 69)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content71" style="display: none">
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_IoniaSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_HeadhunterSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_EternalSwordYiSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_CosmicBladeSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_ChosenSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_AssassinSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_PROJECTYiSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_SamuraiYiSkin.jpg"> 
+            <img class="mySlides fade" src="images/MasterYi/Master_Yi_SnowManYiSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 70)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 70)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 70)"></span>
+              <span class="dot" onclick="currentDiv(2, 70)"></span>
+              <span class="dot" onclick="currentDiv(3, 70)"></span>
+              <span class="dot" onclick="currentDiv(4, 70)"></span>
+              <span class="dot" onclick="currentDiv(5, 70)"></span>
+              <span class="dot" onclick="currentDiv(6, 70)"></span>
+              <span class="dot" onclick="currentDiv(7, 70)"></span>
+              <span class="dot" onclick="currentDiv(8, 70)"></span>
+              <span class="dot" onclick="currentDiv(9, 70)"></span>
+              <span class="dot" onclick="currentDiv(10, 70)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow">
+          <div class="content" id="content72" style="display: none">
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_OriginalSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_MafiaSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_GunGoddessSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_CowgirlSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_CaptainFortuneSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_CandyCaneSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_ArcadeSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_StarGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_PajamaGuardianSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_RoadWarriorSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_PoolPartySkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_SecretAgentSkin.jpg"> 
+            <img class="mySlides fade" src="images/MissFortune/Miss_Fortune_WaterlooSkin.jpg"> 
+            <a class="prev" onclick="plusDivs(-1, 71)">&#10094;</a> 
+            <a class="next" onclick="plusDivs(1, 71)">&#10095;</a>  
+            <br>  
+            <div style="text-align:center">   
+              <span class="dot" onclick="currentDiv(1, 71)"></span>
+              <span class="dot" onclick="currentDiv(2, 71)"></span>
+              <span class="dot" onclick="currentDiv(3, 71)"></span>
+              <span class="dot" onclick="currentDiv(4, 71)"></span>
+              <span class="dot" onclick="currentDiv(5, 71)"></span>
+              <span class="dot" onclick="currentDiv(6, 71)"></span>
+              <span class="dot" onclick="currentDiv(7, 71)"></span>
+              <span class="dot" onclick="currentDiv(8, 71)"></span>
+              <span class="dot" onclick="currentDiv(9, 71)"></span>
+              <span class="dot" onclick="currentDiv(10, 71)"></span>
+              <span class="dot" onclick="currentDiv(11, 71)"></span>
+              <span class="dot" onclick="currentDiv(12, 71)"></span>
+              <span class="dot" onclick="currentDiv(13, 71)"></span>
+            </div>
+          </div>
+        </div>
+        <!--
+          <div class="slideshow">
+            <div class="content" id="content73" style="display: none">
+              <img class="mySlides fade" src="images/Neeko/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 72)">&#10094;</a> <a class="next" onclick="plusDivs(1, 72)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 72)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content74" style="display: none">
+              <img class="mySlides fade" src="images/Nidalee/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 73)">&#10094;</a> <a class="next" onclick="plusDivs(1, 73)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 73)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content75" style="display: none">
+              <img class="mySlides fade" src="images/Nocturne/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 74)">&#10094;</a> <a class="next" onclick="plusDivs(1, 74)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 74)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content76" style="display: none">
+              <img class="mySlides fade" src="images/Nunu/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 75)">&#10094;</a> <a class="next" onclick="plusDivs(1, 75)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 75)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content77" style="display: none">
+              <img class="mySlides fade" src="images/Olaf/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 76)">&#10094;</a> <a class="next" onclick="plusDivs(1, 76)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 76)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content78" style="display: none">
+              <img class="mySlides fade" src="images/Orianna/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 77)">&#10094;</a> <a class="next" onclick="plusDivs(1, 77)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 77)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content79" style="display: none">
+              <img class="mySlides fade" src="images/Ornn/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 78)">&#10094;</a> <a class="next" onclick="plusDivs(1, 78)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 78)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content80" style="display: none">
+              <img class="mySlides fade" src="images/Pantheon/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 79)">&#10094;</a> <a class="next" onclick="plusDivs(1, 79)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 79)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content81" style="display: none">
+              <img class="mySlides fade" src="images/Poppy/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 80)">&#10094;</a> <a class="next" onclick="plusDivs(1, 80)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 80)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content82" style="display: none">
+              <img class="mySlides fade" src="images/Pyke/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 81)">&#10094;</a> <a class="next" onclick="plusDivs(1, 81)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 81)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content83" style="display: none">
+              <img class="mySlides fade" src="images/Quinn/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 82)">&#10094;</a> <a class="next" onclick="plusDivs(1, 82)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 82)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content84" style="display: none">
+              <img class="mySlides fade" src="images/Rakan/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 83)">&#10094;</a> <a class="next" onclick="plusDivs(1, 83)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 83)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content85" style="display: none">
+              <img class="mySlides fade" src="images/Rammus/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 84)">&#10094;</a> <a class="next" onclick="plusDivs(1, 84)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 84)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content86" style="display: none">
+              <img class="mySlides fade" src="images/Rek'Sai/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 85)">&#10094;</a> <a class="next" onclick="plusDivs(1, 85)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 85)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content87" style="display: none">
+              <img class="mySlides fade" src="images/Renekton/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 86)">&#10094;</a> <a class="next" onclick="plusDivs(1, 86)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 86)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content88" style="display: none">
+              <img class="mySlides fade" src="images/Rengar/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 87)">&#10094;</a> <a class="next" onclick="plusDivs(1, 87)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 87)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content89" style="display: none">
+              <img class="mySlides fade" src="images/Riven/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 88)">&#10094;</a> <a class="next" onclick="plusDivs(1, 88)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 88)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content90" style="display: none">
+              <img class="mySlides fade" src="images/Rumble/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 89)">&#10094;</a> <a class="next" onclick="plusDivs(1, 89)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 89)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content91" style="display: none">
+              <img class="mySlides fade" src="images/Ryze/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 90)">&#10094;</a> <a class="next" onclick="plusDivs(1, 90)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 90)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content92" style="display: none">
+              <img class="mySlides fade" src="images/Sejuani/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 91)">&#10094;</a> <a class="next" onclick="plusDivs(1, 91)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 91)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content93" style="display: none">
+              <img class="mySlides fade" src="images/Shaco/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 92)">&#10094;</a> <a class="next" onclick="plusDivs(1, 92)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 92)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content94" style="display: none">
+              <img class="mySlides fade" src="images/Shen/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 93)">&#10094;</a> <a class="next" onclick="plusDivs(1, 93)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 93)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content95" style="display: none">
+              <img class="mySlides fade" src="images/Shyvana/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 94)">&#10094;</a> <a class="next" onclick="plusDivs(1, 94)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 94)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content96" style="display: none">
+              <img class="mySlides fade" src="images/Singed/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 95)">&#10094;</a> <a class="next" onclick="plusDivs(1, 95)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 95)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content97" style="display: none">
+              <img class="mySlides fade" src="images/Sion/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 96)">&#10094;</a> <a class="next" onclick="plusDivs(1, 96)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 96)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content98" style="display: none">
+              <img class="mySlides fade" src="images/Sivir/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 97)">&#10094;</a> <a class="next" onclick="plusDivs(1, 97)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 97)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content99" style="display: none">
+              <img class="mySlides fade" src="images/Skarner/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 98)">&#10094;</a> <a class="next" onclick="plusDivs(1, 98)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 98)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content100" style="display: none">
+              <img class="mySlides fade" src="images/Sona/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 99)">&#10094;</a> <a class="next" onclick="plusDivs(1, 99)">&#10095;</a>  <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 99)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content101" style="display: none">
+              <img class="mySlides fade" src="images/Soraka/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 100)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 100)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 100)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content102" style="display: none">
+              <img class="mySlides fade" src="images/Swain/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 101)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 101)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 101)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content103" style="display: none">
+              <img class="mySlides fade" src="images/Sylas/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 102)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 102)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 102)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content104" style="display: none">
+              <img class="mySlides fade" src="images/Syndra/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 103)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 103)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 103)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content105" style="display: none">
+              <img class="mySlides fade" src="images/TahmKench/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 104)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 104)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 104)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content106" style="display: none">
+              <img class="mySlides fade" src="images/Taliyah/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 105)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 105)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 105)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content107" style="display: none">
+              <img class="mySlides fade" src="images/Talon/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 106)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 106)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 106)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content108" style="display: none">
+              <img class="mySlides fade" src="images/Taric/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 107)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 107)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 107)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content109" style="display: none">
+              <img class="mySlides fade" src="images/Teemo/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 108)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 108)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 108)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content110" style="display: none">
+              <img class="mySlides fade" src="images/Thresh/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 109)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 109)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 109)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content111" style="display: none">
+              <img class="mySlides fade" src="images/Tristana/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 110)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 110)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 110)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content112" style="display: none">
+              <img class="mySlides fade" src="images/Trundle/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 111)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 111)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 111)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content113" style="display: none">
+              <img class="mySlides fade" src="images/Tryndamere/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 112)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 112)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 112)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content114" style="display: none">
+              <img class="mySlides fade" src="images/TwistedFate/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 113)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 113)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 113)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content115" style="display: none">
+              <img class="mySlides fade" src="images/Twitch/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 114)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 114)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 114)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content116" style="display: none">
+              <img class="mySlides fade" src="images/Udyr/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 115)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 115)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 115)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content117" style="display: none">
+              <img class="mySlides fade" src="images/Varus/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 116)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 116)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 116)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content118" style="display: none">
+              <img class="mySlides fade" src="images/Vayne/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 117)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 117)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 117)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content119" style="display: none">
+              <img class="mySlides fade" src="images/Veigar/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 118)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 118)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 118)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content120" style="display: none">
+              <img class="mySlides fade" src="images/Vel'Koz/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 119)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 119)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 119)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content121" style="display: none">
+              <img class="mySlides fade" src="images/Vi/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 120)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 120)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 120)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content122" style="display: none">
+              <img class="mySlides fade" src="images/Viktor/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 121)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 121)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 121)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content123" style="display: none">
+              <img class="mySlides fade" src="images/Vladimir/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 122)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 122)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 122)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content124" style="display: none">
+              <img class="mySlides fade" src="images/Volibear/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 123)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 123)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 123)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content125" style="display: none">
+              <img class="mySlides fade" src="images/Wukong/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 124)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 124)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 124)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content126" style="display: none">
+              <img class="mySlides fade" src="images/Xayah/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 125)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 125)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 125)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content127" style="display: none">
+              <img class="mySlides fade" src="images/Xerath/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 126)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 126)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 126)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content128" style="display: none">
+              <img class="mySlides fade" src="images/XinZhao/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 127)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 127)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 127)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content129" style="display: none">
+              <img class="mySlides fade" src="images/Yorick/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 128)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 128)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 128)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content130" style="display: none">
+              <img class="mySlides fade" src="images/Zac/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 129)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 129)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 129)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content131" style="display: none">
+              <img class="mySlides fade" src="images/Zed/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 130)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 130)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 130)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content132" style="display: none">
+              <img class="mySlides fade" src="images/Ziggs/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 131)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 131)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 131)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content133" style="display: none">
+              <img class="mySlides fade" src="images/Zilean/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 132)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 132)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 132)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content134" style="display: none">
+              <img class="mySlides fade" src="images/Zoe/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 133)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 133)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 133)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content135" style="display: none">
+              <img class="mySlides fade" src="images/Zyra/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 134)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 134)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 134)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content136" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 135)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 135)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 135)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content137" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 136)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 136)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 136)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content138" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 137)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 137)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 137)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content139" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 138)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 138)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 138)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content140" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 139)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 139)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 139)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content141" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 140)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 140)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 140)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content142" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 141)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 141)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 141)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content143" style="display: none">
+              <img class="mySlides fade" src="images/ssss/asdasd.jpg"> <a class="prev" onclick="plusDivs(-1, 142)">&#10094;</a>  <a class="next" onclick="plusDivs(1, 142)">&#10095;</a> <br>  
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 142)"></span></div>
+            </div>
+          </div>
+          <div class="slideshow">
+            <div class="content" id="content144" style="display: none">
+              <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 143)"></span></div>
+            </div>
+          </div>
+          <div style="text-align:center">   <span class="dot" onclick="currentDiv(1, 144)"></span></div>
+          </div></div>
+          </div> -->
+      </div>
+      <h1> Choose Your Own Adventure! (CYOA) </h1>
+
+      <div id="box1">
+        <h1> CYOA Alpha v1.0 </h1>
+        <p id="intro"></p>
+          <p id="chooseAdventure"> </p>
+          <p id="pText"> > Click one of the above </p>
+             <p id="spoon"></p>
+              <p id="choiceA_1"></p>
+                <p id="choiceAAA"></p>
+                <p id="choiceAAB"></p>
+
+      </div>
+
+      <input type="button" id="button1" value="START" onclick="startGame(this)">
+
+    </main>
+  </body>
+  <script>
+    var slideIndex = 1;
+    var z = document.getElementsByClassName("slideshow");
+    for (i = 0; i < z.length; i++) {
+    //set custom data attribute to first current image index
+    z[i].setAttribute("data-currentslide", 1);
+    showDivs(z[i].getAttribute("data-currentslide"), i);
+      }
+    function plusDivs(n, j) {
+     //get custom data attribute value of current image index to slideshow class index j
+    slideIndex = parseInt(z[j].getAttribute("data-currentslide"));
+    showDivs(slideIndex += n, j);
+    }
+    function currentDiv(n, j) {
+    showDivs(slideIndex = n, j); /* showDivs Not showSlides*/
+    }
+    function showDivs(n, j) {
+    var i;
+    var z = document.getElementsByClassName("slideshow")[j];
+    var x = z.getElementsByClassName("mySlides");
+    var dots = z.getElementsByClassName("dot");
+    var captionText = document.getElementById("caption");
+    if (n > x.length) {
+    slideIndex = 1
+    }
+    if (n < 1) {
+     slideIndex = x.length;
+    }
+      //set custom data attribute to current image index
+     z.setAttribute("data-currentslide", slideIndex);
+    for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+    }
+     for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    // captionText.innerHTML = dots[slideIndex - 1].alt;
+     }﻿
+  </script>       
+</html>

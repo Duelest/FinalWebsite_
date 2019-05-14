@@ -1,0 +1,299 @@
+ * {
+   box-sizing: border-box; 
+  }
+
+
+  body {
+  background-color: #474545;
+  min-width: 100%;
+  color: #eae9e5;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+  text-align: center;
+}
+h4#sort_by_title {
+    background-color: rgb(189, 189, 189);
+}
+h5#sort_by_title {
+    background-color: rgb(98, 101, 99);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+header {
+  background-color: #363333;
+}
+
+#jslideShow {
+
+}
+#informationToknow {
+  text-align: center;
+
+}
+
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  /* background-color: rgb(73, 156, 131, 0.5); */
+  background-color: rgb(73, 156, 131, 1);
+  margin-bottom: 1px;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #544d41;
+}
+/* small display styling for nav  */
+ul {
+  flex-direction: row;
+  height: auto;
+}
+
+li {
+  width: 50%;
+  padding: 1px;
+}
+/* small display styling for nav  */
+
+a, a:hover, .dropdown-item {
+  text-decoration: none;
+  color: white;
+}
+img.profile_imgs {
+    width: 350px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1.5em;
+  padding: 5px;
+  padding-bottom: 0px;
+  /* color: #ffd584; */
+  color: #ffffff;
+  text-shadow: 1px 1px 2px darkblue;
+}
+h5 {
+  text-align: center;
+
+}
+
+h1,h3,h4 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.0em;
+  }
+
+/* SORTING ICONS */
+
+#header-title a {
+  color: #e6c640;
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
+
+.offsite-link {
+    /* background-color: rgb(36, 77, 65, 0.5) */
+  background-color: rgb(36, 77, 65, 1);
+}
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+p {
+  margin: 0px;
+  font-size: .9em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+span {
+color: #e09008;
+  text-shadow: 1px 1px 2px darkred;
+}
+
+span.melee-type-pic, span.ranged-type-pic {
+    color: #ffffff;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.ranged-stat-content {
+  color: #077cab;
+}
+.melee-stat-content{
+color: #d20025;
+}
+input, textarea {
+  background-color: lightgrey;
+  width: 150px;
+}
+
+textarea {
+  width: inherit;
+  max-width: 100%;
+}
+
+  #elementWeb2 {
+    display: none;
+  }
+  img {
+    vertical-align: middle;
+    border-style: solid;
+    margin: 4px;
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ h1 {
+      font-size: 2em;
+    }
+
+    h4 {
+      font-size: 2em;
+    }
+
+
+/* small display styling for nav  */
+  .nav-link {
+    display: block;
+  }
+
+/* small display styling for nav  */
+  .nav-link {
+    display: block;
+  }
+  li {
+    /* min-width: 50%;
+    max-width: 100%; */
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* small display styling for nav  */
+}
+  /* small display styling for nav  */
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  #hide-menu {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile-button {
+    display: none;
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .notice-board {
+    width: 30%;
+  }
+
+.sort-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+#sort_by_title {
+    background-color: rgb(48, 58, 53, 1);
+    text-align: center;
+    width: 100%; 
+    }
+  /* ////SC PROFILES view//// */
+  .stat-div-container {
+    width: calc(100% - 200px);
+  }
+  /* ////SC PROFILES END//// */
+
+  /* SORTING ICONS */
+  .sort-buttons {
+    width: 70%;
+    margin-top: 4px;
+  }
+  .sort-buttons button {
+    /* width: 30%; */
+  }
+  /* SORTING ICONS */
+
+  .profile-stat-col-container {
+    /* width: calc(100% - 110px); */
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .profile-pic-container {
+    width: auto;
+    max-width: 210px;
+  }
+
+  .profile-pic-container {
+    width: auto;
+    max-width: 210px;
+  }
+
+  .profile_imgs {
+    max-height: 272px;
+  }
+
+  .profile-row-container {
+    margin-left: auto;
+  }
+
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+ 
+  .mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
